@@ -1,0 +1,35 @@
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: flex;
+    align-items: stretch;
+    height: 48px;
+    color: #9e43ea;
+    font-weight: bold;
+}
+
+.tab-bar > * {
+    flex-grow: 1;
+    border-top: 1px solid #9e43ea;
+    border-left: 1px solid #9e43ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-bar > * > * {
+    flex-grow: 1;
+}
+
+.tab-bar > :first-child {
+    flex-grow: 1;
+    border-left: 0;
+}
+
+.tab-bar > .active {
+    color: black;
+    background-color: #9e43ea;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/switch.css">
+        <link rel="stylesheet" type="text/css" href="css/tab-bar.css">
+        <title>Arkham III Monsters</title>
+    </head>
+    <body>
+        <div class="app" id="app">
+            <div id="snapshot" class="snapshot"></div>
+            <div id="card-ocr-block" class="card-ocr-block"></div>
+            <div id="app-ui" class="app-ui-tab app-ui active">
+                <div id="card-name" class="card-name"></div>
+                <div class="app-content">
+                    <div id="scenario-name" class="scenario-name"></div>
+                    <select id="scenario-selector" class="scenario-selector"></select>
+                    <div id="monster-list"></div>
+                </div>
+            </div>
+            <div id="app-options" class="app-ui-tab app-options">
+                <div class="app-content">
+                    <div class="options-row">
+                        <div data-lang="SOUNDS"></div>
+                        <div class="switch-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="options-sound-switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <div>
+                            <div class="it">Riconoscimento del testo<div class="description">Inquadra il nome della carta per riconoscerla</div></div>
+                            <div class="en">Text recognition<div class="description">Frame the card name to recognize it</div></div>
+                            <div class="es">Reconocimiento de texto<div class="description">Encuadra el nombre de la carta para reconocerla</div></div>
+                        </div>
+                        <div class="switch-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="options-ocr-switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options-row" id="options-count">
+                        <div>
+                            <div class="it">Conta i mostri riconosciuti<div class="description">Per ricominciare, cambia scenario o una delle opzioni di visualizzazione, compresa questa</div></div>
+                            <div class="en">Count recognized monsters<div class="description">To restart, change scenario or one of the visualization options, like this one</div></div>
+                            <div class="es">Contar monstruos reconocidos<div class="description">Para reiniciar cambia el escenario o alguna de las opciones de visualización, como esta</div></div>
+                        </div>
+                        <div class="switch-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="options-count-switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <div>
+                            <div class="it">Mostri esclusivi<div class="description">Evidenzia i mostri presenti soltanto nello scenario selezionato</div></div>
+                            <div class="en">Exclusive monsters<div class="description">Highlight monsters present only in the selected scenario</div></div>
+                            <div class="es">Monstruos exclusivos<div class="description">Resaltar los monstruos exclusivos del escenario seleccionado</div></div>
+
+                        </div>
+                        <div class="switch-wrapper">
+                            <label class="switch ">
+                                <input type="checkbox" id="options-highlightUnique-switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <div>
+                            <div class="it">Lista compatta</div>
+                            <div class="en">Compact list</div>
+                            <div class="es">Lista compacta</div>
+                        </div>
+                        <div class="switch-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="options-group-switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <div>
+                            <div class="it">Espansioni</div>
+                            <div class="en">Expansions</div>
+                            <div class="es">Expansiones</div>
+                        </div>
+                        <div class="switch-wrapper">
+                            
+                        </div>
+                    </div>
+                    <div class="options-row" style="display: none;">
+                        <div>
+                            <div class="it"><div class="description">2018. Gioco base</div></div>
+                            <div class="en"><div class="description">2018. Base Game</div></div>
+                            <div class="es"><div class="description">2018. Juego Base</div></div>
+                        </div>
+                        <div class="switch-wrapper">
+                            <label class="switch disabled">
+                                <input type="checkbox" checked="checked" disabled="disabled">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <div>
+                            <div class="it"><div class="description">2019. Nel Cuore della Notte</div></div>
+                            <div class="en"><div class="description">2019. Dead of Night</div></div>
+                            <div class="es"><div class="description">2019. Noche Cerrada</div></div>
+                        </div>
+                        <div class="switch-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="options-expDON-switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <div>
+                            <div class="it"><div class="description">2020. Abissi Oscuri</div></div>
+                            <div class="en"><div class="description">2020. Under Dark Waves</div></div>
+                            <div class="es"><div class="description">2020. Mareas Tenebrosas</div></div>
+
+                        </div>
+                        <div class="switch-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="options-expUDW-switch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-bar" class="tab-bar">
+                <div id="tab-bar-monsters" data-lang="TAB_MONSTERS"></div>
+                <div id="tab-bar-options" data-lang="TAB_OPTIONS"></div>
+            </div>        
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/vendor/underscore/underscore-min.js"></script>
+        <script src="js/vendor/underscore.string/underscore.string.min.js"></script>
+        <script src="js/vendor/jquery/jquery-3.6.0.min.js"></script>
+
+        <!--
+        First, we load Globalize's dependencies (`cldrjs` and its supplemental
+        module).
+        -->
+        <!--
+        <script src="js/vendor/cldrjs/dist/cldr.js"></script>
+        <script src="js/vendor/cldrjs/dist/cldr/event.js"></script>
+        <script src="js/vendor/cldrjs/dist/cldr/supplemental.js"></script>
+        -->
+
+        <!--
+        Next, we load Globalize and its modules. Note they are already available on
+        this repository. If it's not, read Usage on Getting Started on the root's
+        README.md.
+        -->
+        <!--
+        <script src="js/vendor/globalize/dist/globalize.js"></script>
+        <script src="js/vendor/globalize/dist/globalize/message.js"></script>
+        <script src="js/vendor/globalize/dist/globalize/number.js"></script>
+        <script src="js/vendor/globalize/dist/globalize/plural.js"></script>
+        -->
+
+        <!-- Load after globalize/number.js -->
+        <!--
+        <script src="js/vendor/globalize/dist/globalize/date.js"></script>
+        <script src="js/vendor/globalize/dist/globalize/currency.js"></script>
+        -->
+
+        <!-- Load after globalize/number.js and globalize/plural.js-->
+        <!--
+        <script src="js/vendor/globalize/dist/globalize/relative-time.js"></script>
+        <script src="js/vendor/globalize/dist/globalize/unit.js"></script>
+        -->
+
+        <script src="languages/languages.js"></script>
+        <script src="languages/en.js"></script>
+        <script src="languages/es.js"></script>
+        <script src="languages/it.js"></script>
+        
+        <script src="js/data/expansions.js"></script>
+        <script src="js/data/monsters.js"></script>
+        <script src="js/data/scenarios.js"></script>
+
+        <script src="js/lib/Language.js"></script>
+        <script src="js/lib/Expansion.js"></script>
+        <script src="js/lib/Monster.js"></script>
+        <script src="js/lib/Scenario.js"></script>
+        
+        <!--
+        <script>
+            $.when(
+                $.get( "cldr/main/en/ca-gregorian.json" ),
+                $.get( "cldr/supplemental/likelySubtags.json" ),
+                $.get( "cldr/supplemental/timeData.json" ),
+                $.get( "cldr/supplemental/weekData.json" )
+            ).then(function() {
+
+                // Normalize $.get results, we only need the JSON, not the request statuses.
+                return [].slice.apply( arguments, [ 0 ] ).map(function( result ) {
+                    return result[ 0 ];
+                });
+
+            }).then( Globalize.load ).then(function() {
+
+                [
+                    "js/options.js",
+                    "js/index.js",
+                ].forEach(script => {
+                    $('<script>').attr({src: "js/options.js"}).appendTo('head');
+                });
+                
+            });
+        </script>
+        -->
+
+        <script src="js/options.js"></script>
+        <script src="js/index.js"></script>
+
+
+    </body>
+</html>

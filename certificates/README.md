@@ -1,0 +1,6 @@
+- salva gli script in una cartella `/certificates`
+- esegui lo script del tuo sistema operativo:
+	- OSX: `sh ./keystore.sh`
+	- WIN: `keystore.bat`
+- crea uno script npm nel package.json:
+	- `"dist": "cordova build android --release --buildConfig certificates/build.json",`

@@ -1,0 +1,267 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: transparent;
+    /* background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%); */
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+}
+
+/* Portrait layout (default) */
+.app {
+    position: absolute;
+    width: 100%;                   
+    height: 100%;
+}
+
+.app::before {
+    content: "";
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+}
+
+.snapshot {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    opacity: 0;
+}
+
+.card-ocr-block {
+    position: absolute;
+    border: 1px solid white;
+    text-align: center;
+    white-space: pre;
+    display: none;
+}
+
+.app-ui ,
+.app-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.ocr .app-ui {
+    top: 33%;
+}
+
+.app-content {
+    padding: 10px 10px 59px 10px;
+}
+
+.card-name {
+    display: none;
+}
+
+.ocr .app-ui .card-name{ 
+    display: block;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 0.5;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ocr .app-ui .card-name.match-yes {
+    opacity: 1;
+    background-color: #008800;
+}
+
+.ocr .app-ui .card-name.match-no {
+    opacity: 1;
+    background-color: #ff0000;
+}
+
+.scenario-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9e43ea;
+    text-decoration: underline;
+}
+
+.scenario-selector {
+    position: absolute;
+    visibility: hidden;
+}
+
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 64px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+.options-row .switch-wrapper {
+    padding-left: 10px;
+}
+
+.options-row .description {
+    font-size: 14px;
+}
+
+.scenario-group {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.scenario-group-name {
+    margin-top: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.scenario-group-columns {
+    padding-left: 0;
+    display: flex;
+}
+
+.scenario-group-column-1 {
+    list-style: none;
+    padding-right: 1em;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.scenario-group-column-2 {
+    list-style: none;
+    padding-left: 1em; 
+}
+
+.scenario-group-column-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-style: italic; 
+}
+
+.scenario-group-monsters-list {
+    padding-left: 1em;
+}
+
+.scenario-monsters-list-unique {
+    color: #9e43ea;
+}
+
+.scenario-flat {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.scenario-flat .scenario-monsters-li:not(:first-child) {
+    border-top: 1px solid gray;
+}
+
+.scenario-flat .scenario-monsters-li .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scenario-flat .scenario-monsters-li .content > * {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.scenario-flat .scenario-monsters-li .monster-name {
+    
+}
+
+.scenario-flat .scenario-monsters-li .group-name {
+    color: gray;
+}
+
+
+.scenario-monsters-li.progress .content {
+
+}
+
+.scenario-monsters-li.complete .content,
+.scenario-monsters-li.warning .content,
+.scenario-monsters-li.error  .content {
+    background-color: #008800;
+    color: white;
+}
+
+.scenario-monsters-li.complete .group-name{
+    color: silver;
+}
+
+.scenario-monsters-li.warning .count {
+    background-color: #ff8800;
+}
+
+.scenario-monsters-li.error .count {
+    background-color: red;
+}
+
+/*
+
+ul.scenario-group-monsters-list.count li::before {
+    list-style: none;
+}
+
+ul.scenario-group-monsters-list.count li::before {
+    content: "0";
+    color: transparent;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    background: purple;
+    position: absolute;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: -1em;
+    border-radius: 100%;
+}
+
+*/

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="30" id="it.mephit.ah3m" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="CameraPreview">
+        <param name="android-package" value="com.cordovaplugincamerapreview.CameraPreview" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Textocr">
+        <param name="android-package" value="com.neutrinos.ocrplugin.Textocr" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="Globalization">
+        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Arkham III Monsters</name>
+    <description>
+        Arkham Horror Third Edition Monsters companion
+    </description>
+    <author email="jure@mephit.it" href="http://mephit.it">
+        Jure di Mephit
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/icons/36x36.png" />
+    <icon density="mdpi" src="res/icons/48x48.png" />
+    <icon density="hdpi" src="res/icons/72x72.png" />
+    <icon density="xhdpi" src="res/icons/96x96.png" />
+    <icon density="xxhdpi" src="res/icons/144x144.png" />
+    <icon density="xxxhdpi" src="res/icons/192x192.png" />
+    <splash density="port-ldpi" src="res/screen/200x320.png" />
+    <splash density="port-mdpi" src="res/screen/320x480.png" />
+    <splash density="port-hdpi" src="res/screen/480x800.png" />
+    <splash density="port-xhdpi" src="res/screen/720x1280.png" />
+    <splash density="port-xxhdpi" src="res/screen/960x1600.png" />
+    <splash density="port-xxxhdpi" src="res/screen/1280x1920.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="DisableCrashRecovery" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="android-minSdkVersion" value="23" />
+    <preference name="android-targetSdkVersion" value="29" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+</widget>
