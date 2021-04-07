@@ -6,6 +6,7 @@ var options = {
 
         const options = _.defaults(this.readOptions(), {
             scenarioId: scenarios[0].getId(),
+            lang: app.lang,
             sound: true,
             ocr: false,
             count: true,
@@ -19,22 +20,40 @@ var options = {
         
         _.each(options, (value, key) => { this[key] = value; });
 
-        // sound
-        const soundElement = this.soundElement = document.getElementById('options-sound-switch');
-        soundElement.checked = this.readOption('sound');
-        soundElement.addEventListener('change', this.onSoundChange.bind(this));
+        // lang
+        makeSelector({
+            element: document.getElementById('options-lang-selector'),
+            options: _.map(languages, language => [language.getName(), language.getId()]),
+            value: _.find(languages, language => language.getId() == this.readOption('lang')).getId(),
+            onChange: 'options.onLangChange',
+        });
 
-        // ocr
-        const ocrElement = this.ocrElement = document.getElementById('options-ocr-switch');
-        ocrElement.checked = this.readOption('ocr');
-        ocrElement.addEventListener('change', this.onOcrChange.bind(this));
+        if (device.platform !== 'browser') {
+
+            // sound
+            const soundElement = this.soundElement = document.getElementById('options-sound-switch');
+            soundElement.checked = this.readOption('sound');
+            soundElement.addEventListener('change', this.onSoundChange.bind(this));
+
+            // ocr
+            const ocrElement = this.ocrElement = document.getElementById('options-ocr-switch');
+            ocrElement.checked = this.readOption('ocr');
+            ocrElement.addEventListener('change', this.onOcrChange.bind(this));
+
+            // count ocr
+            const countElement = this.countElement = document.getElementById('options-count-switch');
+            countElement.checked = this.readOption('count');
+            countElement.addEventListener('change', this.onCountChange.bind(this));
+
+        } else {
+            
+            document.getElementById('options-sound').style.display = 'none';
+            document.getElementById('options-ocr').style.display = 'none';
+            document.getElementById('options-count').style.display = 'none';
+
+        }
 
         this.applyOcrOption();
-
-        // count ocr
-        const countElement = this.countElement = document.getElementById('options-count-switch');
-        countElement.checked = this.readOption('count');
-        countElement.addEventListener('change', this.onCountChange.bind(this));
 
         // highlight unique monsters
         const highlightUniqueElement = this.highlightUniqueElement = document.getElementById('options-highlightUnique-switch');
@@ -83,6 +102,14 @@ var options = {
         const EXP = expansion.getCode();
         if ( EXP === "BASE" ) return true;
         return this.readOption(`exp${EXP}`);
+    },
+
+    onLangChange: function (event) {
+        const lang = event.target.value;
+        options.saveOption('lang', lang);
+        app.setLang(lang);
+        app.renderScenario();
+        app.applyLanguage();
     },
 
     onSoundChange: function(event) {
@@ -147,7 +174,10 @@ var options = {
         } else {
             this.saveOption('expDON', false);
         }
-        app.populateScenarioSelector();
+        populateSelector({
+            element: app.scenarioSelector,
+            options: app.getAvailableScenarios().map(scenario => [scenario.getName(), scenario.getId()]),
+        });
     },
 
     onExpUDWChange: function(event) {
@@ -156,7 +186,10 @@ var options = {
         } else {
             this.saveOption('expUDW', false);
         }
-        app.populateScenarioSelector()
+        populateSelector({
+            element: app.scenarioSelector,
+            options: app.getAvailableScenarios().map(scenario => [scenario.getName(), scenario.getId()]),
+        });
     },
 
 }

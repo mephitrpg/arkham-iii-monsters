@@ -1,10 +1,13 @@
 {
-  "name": "Arkham III Monsters",
+  "name": "ah3m",
   "displayName": "Jure di Mephit",
   "version": "1.0.0",
   "description": "Monster Deck setup helper for Arkham Horror Third Edition",
   "main": "index.js",
   "scripts": {
+    "android": "cordova run android --device",
+    "ios": "cordova run ios --device",
+    "connect": "adb tcpip 5555 && adb connect 192.168.1.123",
     "dist": "cordova build android --release --buildConfig certificates/build.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +18,9 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
+    "cordova-browser": "^6.0.0",
     "cordova-plugin-camera-preview": "^0.12.1",
+    "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-file": "^6.0.2",
     "cordova-plugin-globalization": "^1.11.0",
     "cordova-plugin-media": "^5.0.3",
@@ -30,10 +35,12 @@
       "cordova-plugin-mobile-ocr": {},
       "cordova-plugin-media": {},
       "cordova-plugin-globalization": {},
-      "cordova-plugin-splashscreen": {}
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-device": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "browser"
     ]
   },
   "devDependencies": {

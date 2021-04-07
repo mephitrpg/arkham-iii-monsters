@@ -164,8 +164,7 @@ class Scenario {
                     html += '<ul class="scenario-group-columns">';
                         html += '<li class="scenario-group-column-1">';
                             html += '<div class="scenario-group-column-title">';
-                                html += '<div class="it">Mostri specifici</div>';
-                                html += '<div class="en">Specific monsters</div>';
+                                html += l('SPECIFIC_MONSTERS');
                             html += '</div>';
                             html += '<ul class="scenario-group-monsters-list">';
                             groupMonsters.sort((a, b) => {
@@ -174,6 +173,7 @@ class Scenario {
                                 const mb = this.getMonsterById(b.id, cloneMonsters);
                                 return ma.getName().localeCompare(mb.getName(), lang);
                             });
+                            var q = 0;
                             groupMonsters.forEach(scenarioItem => {
                                 if (!scenarioItem.id) return;
                                 const cloneMonster = this.getMonsterById(scenarioItem.id, cloneMonsters);
@@ -199,8 +199,12 @@ class Scenario {
                                         cssClass = 'scenario-monsters-list-unique';
                                     }
                                 }
+                                q++;
                                 html += `<li class="scenario-monsters-li ${cssClass}" data-slug="${slug}"><div class="content">${name}${quantity}</div></li>`;
                             });
+                            if (!q) {
+                                html += `<li class="scenario-monsters-li noitems"><div class="content">${l('NO_MONSTERS')}</div></li>`;
+                            }
                             html += '</ul>';
                         html += '</li>';
                         
@@ -220,13 +224,13 @@ class Scenario {
                             }
                             const monsterTypeDisplay = this.translateMonsterType(monsterTypeId);
                             html += '<div class="scenario-group-column-title">';
-                                html += '<div class="it">Tutti i mostri <strong>' + monsterTypeDisplay + '</strong></div>';
-                                html += '<div class="en">All <strong>' + monsterTypeDisplay + '</strong> monsters</div>';
+                                html += l('ALL_TYPE_MONSTERS', monsterTypeDisplay)
                             html += '</div>';
                             html += '<ul class="scenario-group-monsters-list">';
                             typeMonsters.sort((ma, mb) => {
                                 return ma.getName().localeCompare(mb.getName(), lang);
                             });
+                            var q = 0;
                             typeMonsters.forEach(monster => {
                                 const name = monster.getName();
                                 const slug = monster.getSlug();
@@ -243,8 +247,12 @@ class Scenario {
                                         cssClass = 'scenario-monsters-list-unique';
                                     }
                                 }
+                                q++;
                                 html += `<li class="scenario-monsters-li ${cssClass}" data-slug="${slug}"><div class="content">${name}${quantity}</div></li>`;
                             });
+                            if (!q) {
+                                html += `<li class="scenario-monsters-li noitems"><div class="content">${l('NO_MONSTERS')}</div></li>`;
+                            }
                             html += '</ul>';
                         });
                         html += '</li>';
