@@ -40,8 +40,11 @@ body {
 /* Portrait layout (default) */
 .app {
     position: absolute;
-    width: 100%;                   
-    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
 }
 
 .app::before {
@@ -51,16 +54,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
 }
 
-.snapshot {
+/* .snapshot {
     position: absolute;
     width: 100%;
     height: 100vh;
     background-color: white;
     opacity: 0;
-}
+} */
 
 .card-ocr-block {
     position: absolute;
@@ -74,11 +76,11 @@ body {
 .app-options {
     position: absolute;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
     box-sizing: border-box;
     background-color: black;
-    color: white;
 }
 
 .ocr .app-ui {
@@ -86,7 +88,9 @@ body {
 }
 
 .app-content {
-    padding: 10px 10px 59px 10px;
+    padding: 10px 10px 48px 10px;
+    color: white;
+    background-color: black;
 }
 
 .card-name {
@@ -119,16 +123,94 @@ body {
     background-color: #ff0000;
 }
 
-.scenario-name {
+.browser-selector {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    max-width: calc(100% - 10px * 2);
+    max-height: calc(100% - (48px + 10px) * 2);
+
+    background-color: #424242;
+    color: white;
+    font-family: inherit;
     font-size: 24px;
-    font-weight: bold;
+    outline: none;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+.browser-selector-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.browser-selector option {
+    position: relative;
+    box-sizing: border-box;
+    padding: 16px 0 16px 16px;
+    padding-right: calc(16px + 16px + 16px);
+    border-bottom: 1px solid gray;
+}
+
+.browser-selector option::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid white;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: calc(16px / 2);
+    border-radius: calc(16px / 2);
+    top: calc(48px - 16px - 16px / 2);
+    right: 16px;
+}
+
+.browser-selector option:checked {
+    box-shadow: 0 0 10px 100px #424242 inset;
+}
+
+.browser-selector option:checked::before {
+    pointer-events: none;
+    position: absolute;
+    color: #ffffff;
+}
+
+.browser-selector option:checked::after {
+    pointer-events: none;
+    border-color: #00ddff;
+    background: rgb(0,221,255);
+    background: -moz-radial-gradient(circle, rgba(0,221,255,1) 0%, rgba(0,221,255,1) 50%, rgba(66,66,66,1) 50%, rgba(66,66,66,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,221,255,1) 0%, rgba(0,221,255,1) 50%, rgba(66,66,66,1) 50%, rgba(66,66,66,1) 100%);
+    background: radial-gradient(circle, rgba(0,221,255,1) 0%, rgba(0,221,255,1) 50%, rgba(66,66,66,1) 50%, rgba(66,66,66,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ddff",endColorstr="#424242",GradientType=1);
+}
+
+.hidden-selector {
+    position: absolute;
+    visibility: hidden;
+}
+
+.hidden-selector-link {
     color: #9e43ea;
     text-decoration: underline;
 }
 
+.scenario-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .scenario-selector {
-    position: absolute;
-    visibility: hidden;
+    
 }
 
 .options-row {
@@ -243,6 +325,11 @@ body {
 
 .scenario-monsters-li.error .count {
     background-color: red;
+}
+
+.scenario-monsters-li.noitems {
+    color: #888888;
+    font-style: italic;
 }
 
 /*

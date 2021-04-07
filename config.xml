@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="it.mephit.ah3m" version="1.2.0" android-versionCode="30" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="it.mephit.ah3m" version="1.2.0" android-versionCode="40" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Arkham III Monsters</name>
     <description>
         Monster Deck setup helper for Arkham Horror Third Edition
@@ -56,6 +56,13 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
 
+        <preference name="AutoHideSplashScreen" value="false" />
+    </platform>
+    <platform name="browser">
+        <preference name="SplashScreenBackgroundColor" value="black" />
+        <preference name="SplashScreen" value="/img/logo.png" />
+        <preference name="SplashScreenWidth" value="150" />
+        <preference name="SplashScreenHeight" value="160" />
         <preference name="AutoHideSplashScreen" value="false" />
     </platform>
 </widget>
