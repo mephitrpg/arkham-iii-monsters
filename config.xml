@@ -20,7 +20,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="DisableCrashRecovery" value="true" />
     <preference name="SplashScreenBackgroundColor" value="black" />
-    <preference name="SplashScreen" value="/img/logo.png" />
+    <preference name="SplashScreen" value="img/logo.png" />
     <preference name="SplashScreenWidth" value="150" />
     <preference name="SplashScreenHeight" value="160" />
     <preference name="AutoHideSplashScreen" value="false" />
