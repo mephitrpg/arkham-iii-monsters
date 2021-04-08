@@ -112,6 +112,7 @@ let scenarios = [
                 { "id": "Shallows Predator", "quantity": 2 },
                 { "id": "Occult Ritualist", "quantity": 2 },
                 { "id": "High Priest", "quantity": 1 },
+                { "type": "Dreaming", "quantity": "all" },
                 { "type": "Star Spawn", "quantity": "all" }
             ]}
         ]
