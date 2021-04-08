@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Arkham III Monsters",
+  "short_name": "Arkham III Monsters",
+  "version": "it.mephit.ah3m",
+  "description": "Monster Deck setup helper for Arkham Horror Third Edition",
+  "author": "Jure di Mephit",
+  "icons": [],
+  "start_url": "index.html"
+}
