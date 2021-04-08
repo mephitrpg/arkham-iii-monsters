@@ -77,6 +77,13 @@ function makeSelector(options) {
             selectorOverlay(selectorElement, true);
         });
 
+        selectorElement.addEventListener('click', (ev) => {
+            const target = ev.target;
+            if (target.tagName.toLowerCase() !== 'option') return;
+            if (!target.selected) return;
+            selectorElement.dispatchEvent(new Event('change'));
+        });
+
         selectorElement.addEventListener('change', () => {
             selectorElement.classList.remove('browser-selector');
             selectorElement.classList.add('hidden-selector');
