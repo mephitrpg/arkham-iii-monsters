@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="30" id="it.mephit.ah3m" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="40" id="it.mephit.ah3m" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="CameraPreview">
         <param name="android-package" value="com.cordovaplugincamerapreview.CameraPreview" />
         <param name="onload" value="true" />
@@ -26,9 +26,12 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
     <name>Arkham III Monsters</name>
     <description>
-        Arkham Horror Third Edition Monsters companion
+        Monster Deck setup helper for Arkham Horror Third Edition
     </description>
     <author email="jure@mephit.it" href="http://mephit.it">
         Jure di Mephit

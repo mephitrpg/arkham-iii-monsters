@@ -206,20 +206,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "es6-promise-plugin.Promise",
-      "file": "plugins/es6-promise-plugin/www/promise.js",
-      "pluginId": "es6-promise-plugin",
-      "runs": true
-    },
-    {
-      "id": "cordova-plugin-screen-orientation.screenorientation",
-      "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
-      "pluginId": "cordova-plugin-screen-orientation",
-      "clobbers": [
-        "cordova.plugins.screenorientation"
-      ]
-    },
-    {
       "id": "cordova-plugin-globalization.GlobalizationError",
       "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
       "pluginId": "cordova-plugin-globalization",
@@ -242,6 +228,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "navigator.splashscreen"
       ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -250,9 +244,8 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-mobile-ocr": "3.1.2",
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-media": "5.0.3",
-    "es6-promise-plugin": "4.2.2",
-    "cordova-plugin-screen-orientation": "3.0.2",
     "cordova-plugin-globalization": "1.11.0",
-    "cordova-plugin-splashscreen": "6.0.0"
+    "cordova-plugin-splashscreen": "6.0.0",
+    "cordova-plugin-device": "2.0.3"
   };
 });

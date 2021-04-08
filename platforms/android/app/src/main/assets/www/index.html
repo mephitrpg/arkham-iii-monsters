@@ -39,20 +39,32 @@
         <title>Arkham III Monsters</title>
     </head>
     <body>
-        <div class="app" id="app">
-            <div id="snapshot" class="snapshot"></div>
+        <div class="app" id="app" style="visibility: hidden;">
+            <!-- <div id="snapshot" class="snapshot"></div> -->
             <div id="card-ocr-block" class="card-ocr-block"></div>
             <div id="app-ui" class="app-ui-tab app-ui active">
                 <div id="card-name" class="card-name"></div>
                 <div class="app-content">
-                    <div id="scenario-name" class="scenario-name"></div>
-                    <select id="scenario-selector" class="scenario-selector"></select>
+                    <label class="scenario-name">
+                        <select id="scenario-selector" class="scenario-selector"></select>
+                    </label>
                     <div id="monster-list"></div>
                 </div>
             </div>
             <div id="app-options" class="app-ui-tab app-options">
                 <div class="app-content">
                     <div class="options-row">
+                        <div>
+                            <div data-lang="OPTION_LANGUAGE_TITLE"></div>
+                            <div class="description" data-lang="OPTION_LANGUAGE_DESCRIPTION"></div>
+                        </div>
+                        <div class="selector-wrapper">
+                            <label class="selector">
+                                <select id="options-lang-selector"></select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="options-row" id="options-sound">
                         <div data-lang="SOUNDS"></div>
                         <div class="switch-wrapper">
                             <label class="switch">
@@ -61,11 +73,10 @@
                             </label>
                         </div>
                     </div>
-                    <div class="options-row">
+                    <div class="options-row" id="options-ocr">
                         <div>
-                            <div class="it">Riconoscimento del testo<div class="description">Inquadra il nome della carta per riconoscerla</div></div>
-                            <div class="en">Text recognition<div class="description">Frame the card name to recognize it</div></div>
-                            <div class="es">Reconocimiento de texto<div class="description">Encuadra el nombre de la carta para reconocerla</div></div>
+                            <div data-lang="OPTION_OCR_TITLE"></div>
+                            <div class="description" data-lang="OPTION_OCR_DESCRIPTION"></div>
                         </div>
                         <div class="switch-wrapper">
                             <label class="switch">
@@ -76,9 +87,8 @@
                     </div>
                     <div class="options-row" id="options-count">
                         <div>
-                            <div class="it">Conta i mostri riconosciuti<div class="description">Per ricominciare, cambia scenario o una delle opzioni di visualizzazione, compresa questa</div></div>
-                            <div class="en">Count recognized monsters<div class="description">To restart, change scenario or one of the visualization options, like this one</div></div>
-                            <div class="es">Contar monstruos reconocidos<div class="description">Para reiniciar cambia el escenario o alguna de las opciones de visualización, como esta</div></div>
+                            <div data-lang="OPTION_COUNT_TITLE"></div>
+                            <div class="description" data-lang="OPTION_COUNT_DESCRIPTION"></div>
                         </div>
                         <div class="switch-wrapper">
                             <label class="switch">
@@ -89,10 +99,8 @@
                     </div>
                     <div class="options-row">
                         <div>
-                            <div class="it">Mostri esclusivi<div class="description">Evidenzia i mostri presenti soltanto nello scenario selezionato</div></div>
-                            <div class="en">Exclusive monsters<div class="description">Highlight monsters present only in the selected scenario</div></div>
-                            <div class="es">Monstruos exclusivos<div class="description">Resaltar los monstruos exclusivos del escenario seleccionado</div></div>
-
+                            <div data-lang="OPTION_HIGHLIGHT_UNIQUE_TITLE"></div>
+                            <div class="description" data-lang="OPTION_HIGHLIGHT_UNIQUE_DESCRIPTION"></div>
                         </div>
                         <div class="switch-wrapper">
                             <label class="switch ">
@@ -103,9 +111,8 @@
                     </div>
                     <div class="options-row">
                         <div>
-                            <div class="it">Lista compatta</div>
-                            <div class="en">Compact list</div>
-                            <div class="es">Lista compacta</div>
+                            <div data-lang="OPTION_GROUP_TITLE"></div>
+                            <div class="description" data-lang="OPTION_GROUP_DESCRIPTION"></div>
                         </div>
                         <div class="switch-wrapper">
                             <label class="switch">
@@ -116,9 +123,8 @@
                     </div>
                     <div class="options-row">
                         <div>
-                            <div class="it">Espansioni</div>
-                            <div class="en">Expansions</div>
-                            <div class="es">Expansiones</div>
+                            <div data-lang="OPTION_EXPANSIONS_TITLE"></div>
+                            <div class="description" data-lang="OPTION_EXPANSIONS_DESCRIPTION"></div>
                         </div>
                         <div class="switch-wrapper">
                             
@@ -126,9 +132,8 @@
                     </div>
                     <div class="options-row" style="display: none;">
                         <div>
-                            <div class="it"><div class="description">2018. Gioco base</div></div>
-                            <div class="en"><div class="description">2018. Base Game</div></div>
-                            <div class="es"><div class="description">2018. Juego Base</div></div>
+                            <div data-lang="OPTION_EXPANSIONS_BASE_TITLE"></div>
+                            <div class="description" data-lang="OPTION_EXPANSIONS_BASE_DESCRIPTION"></div>
                         </div>
                         <div class="switch-wrapper">
                             <label class="switch disabled">
@@ -139,9 +144,8 @@
                     </div>
                     <div class="options-row">
                         <div>
-                            <div class="it"><div class="description">2019. Nel Cuore della Notte</div></div>
-                            <div class="en"><div class="description">2019. Dead of Night</div></div>
-                            <div class="es"><div class="description">2019. Noche Cerrada</div></div>
+                            <div data-lang="OPTION_EXPANSIONS_DON_TITLE"></div>
+                            <div class="description" data-lang="OPTION_EXPANSIONS_DON_DESCRIPTION"></div>
                         </div>
                         <div class="switch-wrapper">
                             <label class="switch">
@@ -152,10 +156,8 @@
                     </div>
                     <div class="options-row">
                         <div>
-                            <div class="it"><div class="description">2020. Abissi Oscuri</div></div>
-                            <div class="en"><div class="description">2020. Under Dark Waves</div></div>
-                            <div class="es"><div class="description">2020. Mareas Tenebrosas</div></div>
-
+                            <div data-lang="OPTION_EXPANSIONS_UDW_TITLE"></div>
+                            <div class="description" data-lang="OPTION_EXPANSIONS_UDW_DESCRIPTION"></div>
                         </div>
                         <div class="switch-wrapper">
                             <label class="switch">

@@ -39,6 +39,10 @@
             {
               "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -123,6 +127,9 @@
       "PACKAGE_NAME": "it.mephit.ah3m"
     },
     "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "it.mephit.ah3m"
+    },
+    "cordova-plugin-device": {
       "PACKAGE_NAME": "it.mephit.ah3m"
     }
   },
@@ -356,6 +363,14 @@
       "clobbers": [
         "navigator.splashscreen"
       ]
+    },
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -365,6 +380,7 @@
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-media": "5.0.3",
     "cordova-plugin-globalization": "1.11.0",
-    "cordova-plugin-splashscreen": "6.0.0"
+    "cordova-plugin-splashscreen": "6.0.0",
+    "cordova-plugin-device": "2.0.3"
   }
 }

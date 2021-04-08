@@ -24,6 +24,9 @@
     },
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "it.mephit.ah3m"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "it.mephit.ah3m"
     }
   },
   "dependent_plugins": {
