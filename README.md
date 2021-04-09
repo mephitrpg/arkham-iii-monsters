@@ -1,6 +1,6 @@
 # Arkham III Monsters
 
-This application shows the customizable monster's list of every scenario of the Arkham Horror Third Edition board game, in order to speed up preparing the monster cards before the start of the game and putting back them in the box at the end of the game.
+This app shows the customizable monster's list of every scenario of the Arkham Horror Third Edition board game, in order to speed up preparing the monster cards before the start of the game and putting back them in the box at the end of the game.
 
 Supported platforms:
 
