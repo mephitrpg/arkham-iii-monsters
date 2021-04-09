@@ -9,17 +9,20 @@ Supported platforms:
 
 Features:
 
-* TEXT RECOGNITION
+* TEXT RECOGNITION\
 If you want you can frame the monster card name to know if it's part of the scenario. You can auto-check it in the list, to verify that all the scenario's monsters was found.
 
-* EXCLUSIVE MONSTERS
-Highlight monsters present only in the selected scenario. Useful if you want to store aside specific monsters of every scenario, so when you setup you'll have to search only the remaining ones.
+* MONSTERS BY TYPE\
+Unlike what happens in the scenario sheet, "All [monster type] monsters" names are listed.
 
-* EXPANDED LIST
-Unlike what happens in the scenario sheet, "All monsters" names are listed.
-
-* COMPACTLIST
+* COMPACT LIST\
 The list can be viewed as a simple list of all monsters, or grouped as in the scenario sheet.
 
-* MULTILANGUAGE
+* EXCLUSIVE MONSTERS\
+Highlight monsters present only in the selected scenario. Useful if you want to store aside specific monsters of every scenario, so when you setup you'll have to search only the remaining ones.
+
+* MULTILANGUAGE\
 Italiano, English, Español.
+
+* WEB VERSION\
+https://mephitrpg.github.io/arkham-iii-monsters
