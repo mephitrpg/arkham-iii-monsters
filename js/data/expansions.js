@@ -23,4 +23,12 @@ let expansions = [
             es: "Mareas Tenebrosas",
         }
     },
+    {
+        code: "SOO",
+        name: {
+            it: "I Segreti dell'Ordine",
+            en: "Secrets of the Order",
+            es: "Secretos de la Orden",
+        }
+    },
 ];
