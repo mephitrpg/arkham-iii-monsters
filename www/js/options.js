@@ -4,7 +4,7 @@ var options = {
         
         if (!localStorage.getItem('options')) localStorage.setItem('options','{}');
 
-        const options = _.defaults(this.readOptions(), {
+        const def = {
             scenarioId: scenarios[0].getId(),
             lang: app.lang,
             sound: true,
@@ -12,13 +12,41 @@ var options = {
             count: true,
             highlightUnique: false,
             group: false,
-            expDON: true,
-            expUDW: true,
+        };
+
+        expansions.forEach(exp=>{
+            const code = exp.getCode();
+            if (code !== 'BASE') def[`exp${code}`] = true;
         });
+
+        const options = _.defaults(this.readOptions(), def);
         
         this.saveOptions(options);
         
         _.each(options, (value, key) => { this[key] = value; });
+
+        // html
+        expansions.forEach((exp)=>{
+            const code = exp.getCode();
+            const show = code === 'BASE' ? ' style="display:none;"' : '';
+            const ckAttr = code === 'BASE' ? ` checked="checked" disabled="disabled"` : ` id="options-exp${code}-switch"`;
+            const title = `OPTION_EXPANSIONS_${code}_TITLE`;
+            const description = `OPTION_EXPANSIONS_${code}_DESCRIPTION`;
+            $('#app-options .app-content').append(
+                `<div class="options-row"${show}>
+                    <div>
+                        <div data-lang="${title}"></div>
+                        <div class="description" data-lang="${description}"></div>
+                    </div>
+                    <div class="switch-wrapper">
+                        <label class="switch disabled">
+                            <input type="checkbox"${ckAttr}>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>`
+            );
+        });
 
         // lang
         makeSelector({
@@ -65,14 +93,14 @@ var options = {
         groupElement.checked = this.readOption('group');
         groupElement.addEventListener('change', this.onGroupChange.bind(this));
 
-        // expansions
-        const expDONElement = this.expDONElement = document.getElementById('options-expDON-switch');
-        expDONElement.checked = this.readOption('expDON');
-        expDONElement.addEventListener('change', this.onExpDONChange.bind(this));
-
-        const expUDWElement = this.expUDWElement = document.getElementById('options-expUDW-switch');
-        expUDWElement.checked = this.readOption('expUDW');
-        expUDWElement.addEventListener('change', this.onExpUDWChange.bind(this));
+         // expansions
+         expansions.forEach(exp=>{
+            const code = exp.getCode();
+            const expElement = this[`exp${code}Element`] = document.getElementById(`options-exp${code}-switch`);
+            if (!expElement) return;
+            expElement.checked = this.readOption(`exp${code}`);
+            expElement.addEventListener('change', this.onExpChange.bind(this, code));
+        });
 
     },
 
@@ -168,24 +196,8 @@ var options = {
         app.renderScenario();
     },
 
-    onExpDONChange: function(event) {
-        if (event.target.checked) {
-            this.saveOption('expDON', true);
-        } else {
-            this.saveOption('expDON', false);
-        }
-        populateSelector({
-            element: app.scenarioSelector,
-            options: app.getAvailableScenarios().map(scenario => [scenario.getName(), scenario.getId()]),
-        });
-    },
-
-    onExpUDWChange: function(event) {
-        if (event.target.checked) {
-            this.saveOption('expUDW', true);
-        } else {
-            this.saveOption('expUDW', false);
-        }
+    onExpChange: function(code, event) {
+        this.saveOption(`exp${code}`, event.target.checked);
         populateSelector({
             element: app.scenarioSelector,
             options: app.getAvailableScenarios().map(scenario => [scenario.getName(), scenario.getId()]),

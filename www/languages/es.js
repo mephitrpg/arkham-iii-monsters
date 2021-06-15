@@ -25,6 +25,8 @@ languages["es"] = {
         "OPTION_EXPANSIONS_DON_DESCRIPTION" : "2019. Noche Cerrada",
         "OPTION_EXPANSIONS_UDW_TITLE" : "",
         "OPTION_EXPANSIONS_UDW_DESCRIPTION" : "2020. Mareas Tenebrosas",
+        "OPTION_EXPANSIONS_SOO_TITLE" : "",
+        "OPTION_EXPANSIONS_SOO_DESCRIPTION" : "2021. Secretos de la Orden",
         "SPECIFIC_MONSTERS": "Monstruos específicos",
         "ALL_TYPE_MONSTERS": "Todos los monstruos <strong>%1</strong>",
         "NO_MONSTERS": "Ningún monstruo",

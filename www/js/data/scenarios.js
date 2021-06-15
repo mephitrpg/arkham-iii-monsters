@@ -96,8 +96,10 @@ let scenarios = [
                 { "id": "Mouthy Recanteur", "quantity": 1 },
                 { "type": "Nightgaunt", "quantity": "all" }
             ]},
-            { "name": {"en": "Set aside", "it": "Messi da parte", "es": "Apartar a un lado"}, "monsters": [
-                { "type": "O'Bannion", "quantity": "all" },
+            { "name": {"en": "O'Bannion", "it": "O'Bannion", "es": "O'Bannion"}, "monsters": [
+                { "type": "O'Bannion", "quantity": "all" }
+            ]},
+            { "name": {"en": "Sheldon", "it": "Sheldon", "es": "Sheldon"}, "monsters": [
                 { "type": "Sheldon", "quantity": "all" }
             ]}
         ]
@@ -150,14 +152,56 @@ let scenarios = [
         ]
     },
     {
-        "name": { "en": "Echoes of the Deep", "it": "Echi dal Profondo", "es": "Ecos de las profundidades" },
-        "expansion": "Base Game",
+        "name": { "en": "The Key and The Gate", "it": "The Key and The Gate", "es": "The Key and The Gate" },
+        "expansion": "Secrets of the Order",
         "monsterGropus": [
             { "name": {"en": "Monster Deck", "it": "Mazzo dei Mostri", "es": "Mazo de Monstruos"}, "monsters": [
-                { "id": "R'lyeh Guardian", "quantity": 1 },
-                { "id": "Hooded Stalker", "quantity": 2 },
-                { "id": "Occult Ritualist", "quantity": 2 },
-                { "type": "Deep One", "quantity": "all" }
+                { "id": "Bloody Titan", "quantity": 1 },
+                { "id": "Corpse-Taker", "quantity": 1 },
+                { "id": "Coursing Hound", "quantity": 1 },
+                { "id": "Crazed Fiend", "quantity": 1 },
+                { "id": "Gluttonous Giant", "quantity": 1 },
+                { "id": "Keening Hound", "quantity": 1 },
+                { "id": "Raging Poltergeist", "quantity": 3 },
+                { "id": "Stalking Wraith", "quantity": 2 },
+                { "id": "Tunneling Dhole", "quantity": 1 },
+                { "id": "Whippoorwill", "quantity": 2 },
+                { "type": "Thrall", "quantity": "all" }
+            ]}
+        ]
+    },
+    {
+        "name": { "en": "The Dead Cry Out", "it": "The Dead Cry Out", "es": "The Dead Cry Out" },
+        "expansion": "Secrets of the Order",
+        "monsterGropus": [
+            { "name": {"en": "Monster Deck", "it": "Mazzo dei Mostri", "es": "Mazo de Monstruos"}, "monsters": [
+                { "id": "Abyssal Servant", "quantity": 1 },
+                { "id": "Coursing Hound", "quantity": 1 },
+                { "id": "Flesh-Eater", "quantity": 2 },
+                { "id": "Haunting Dead", "quantity": 3 },
+                { "id": "Nightmarish Fiend", "quantity": 1 },
+                { "id": "Swift Byakhee", "quantity": 1 },
+                { "id": "Tunneling Dhole", "quantity": 1 },
+                { "id": "Vicious Glutton", "quantity": 2 },
+                { "type": "Gug", "quantity": "all" },
+                { "type": "Ghast", "quantity": "all" }
+            ]}
+        ]
+    },
+    {
+        "name": { "en": "Bound to Serve", "it": "Bound to Serve", "es": "Bound to Serve" },
+        "expansion": "Secrets of the Order",
+        "monsterGropus": [
+            { "name": {"en": "Monster Deck", "it": "Mazzo dei Mostri", "es": "Mazo de Monstruos"}, "monsters": [
+                { "id": "Flesh-Eater", "quantity": 2 },
+                { "id": "High Priest", "quantity": 1 },
+                { "id": "Lupine Thrall", "quantity": 1 },
+                { "id": "Taloned Cannibal", "quantity": 2 },
+                { "id": "Tindalos Alpha", "quantity": 1 },
+                { "type": "Spirit", "quantity": "all" }
+            ]},
+            { "name": {"en": "Set aside", "it": "Messi da parte", "es": "Apartar a un lado"}, "monsters": [
+                { "type": "Lodge", "quantity": "all" }
             ]}
         ]
     }

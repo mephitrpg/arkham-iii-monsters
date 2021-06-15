@@ -25,6 +25,8 @@ languages["it"] = {
         "OPTION_EXPANSIONS_DON_DESCRIPTION" : "2019. Nel Cuore della Notte",
         "OPTION_EXPANSIONS_UDW_TITLE" : "",
         "OPTION_EXPANSIONS_UDW_DESCRIPTION" : "2020. Abissi Oscuri",
+        "OPTION_EXPANSIONS_SOO_TITLE" : "",
+        "OPTION_EXPANSIONS_SOO_DESCRIPTION" : "2021. I Segreti dell'Ordine",
         "SPECIFIC_MONSTERS": "Mostri specifici",
         "ALL_TYPE_MONSTERS": "Tutti i mostri <strong>%1</strong>",
         "NO_MONSTERS": "Nessun mostro",
