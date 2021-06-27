@@ -39,7 +39,7 @@ var options = {
                         <div class="description" data-lang="${description}"></div>
                     </div>
                     <div class="switch-wrapper">
-                        <label class="switch disabled">
+                        <label class="switch"><!-- disabled -->
                             <input type="checkbox"${ckAttr}>
                             <span class="slider round"></span>
                         </label>
