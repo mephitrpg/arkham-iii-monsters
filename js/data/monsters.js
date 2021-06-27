@@ -62,7 +62,7 @@ let monsters = [
 			"es": "Siervo alterado"
 		},
 		"type": {
-			"en": ["Human", "Thrall"],
+			"en": ["Human", "b"],
 			"it": ["Umano", "Servitore"],
 			"es": ["Humano", "Subyugado"]
 		},
@@ -95,6 +95,20 @@ let monsters = [
 			"es": ["Humano", "Sectario"]
 		},
 		"expansion": "Base Game",
+		"quantity": 1
+	},
+	{
+		"name": {
+			"en": "Bloody Titan",
+			"it": "Bloody Titan",
+			"es": "Bloody Titan"
+		},
+		"type": {
+			"en": ["Gug"],
+			"it": ["Gug"],
+			"es": ["Gug"]
+		},
+		"expansion": "Secrets of the Order",
 		"quantity": 1
 	},
 	{
@@ -197,6 +211,20 @@ let monsters = [
 	},
 	{
 		"name": {
+			"en": "Coursing Hound",
+			"it": "Coursing Hound",
+			"es": "Coursing Hound"
+		},
+		"type": {
+			"en": ["Hound of Tindalos"],
+			"it": ["Hound of Tindalos"],
+			"es": ["Hound of Tindalos"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 1
+	},
+	{
+		"name": {
 			"en": "Crawling One",
 			"it": "Strisciante",
 			"es": "Reptante"
@@ -208,6 +236,20 @@ let monsters = [
 		},
 		"expansion": "Dead of Night",
 		"quantity": 2
+	},
+	{
+		"name": {
+			"en": "Crazed Fiend",
+			"it": "Crazed Fiend",
+			"es": "Crazed Fiend"
+		},
+		"type": {
+			"en": ["Ghast"],
+			"it": ["Ghast"],
+			"es": ["Ghast"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 1
 	},
 	{
 		"name": {
@@ -393,6 +435,20 @@ let monsters = [
 	},
 	{
 		"name": {
+			"en": "Gluttonous Giant",
+			"it": "Gluttonous Giant",
+			"es": "Gluttonous Giant"
+		},
+		"type": {
+			"en": ["Gug"],
+			"it": ["Gug"],
+			"es": ["Gug"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 1
+	},
+	{
+		"name": {
 			"en": "Grasping Fungus",
 			"it": "Ghermitore Fungino",
 			"es": "Hongo ladrón"
@@ -418,6 +474,20 @@ let monsters = [
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
+	},
+	{
+		"name": {
+			"en": "Haunting Dead",
+			"it": "Haunting Dead",
+			"es": "Haunting Dead"
+		},
+		"type": {
+			"en": ["Troubled", "Spirit"],
+			"it": ["Troubled", "Spirit"],
+			"es": ["Troubled", "Spirit"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 3
 	},
 	{
 		"name": {
@@ -561,6 +631,20 @@ let monsters = [
 	},
 	{
 		"name": {
+			"en": "Lodge Guardian",
+			"it": "Lodge Guardian",
+			"es": "Lodge Guardian"
+		},
+		"type": {
+			"en": ["Lodge", "Human"],
+			"it": ["Lodge", "Human"],
+			"es": ["Lodge", "Human"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 1
+	},
+	{
+		"name": {
 			"en": "Lodge Loyalist",
 			"it": "Lealista della Loggia",
 			"es": "Adepto de la Logia"
@@ -572,6 +656,20 @@ let monsters = [
 		},
 		"expansion": "Base Game",
 		"quantity": 2
+	},
+	{
+		"name": {
+			"en": "Lodge Seer",
+			"it": "Lodge Seer",
+			"es": "Lodge Seer"
+		},
+		"type": {
+			"en": ["Lodge", "Human"],
+			"it": ["Lodge", "Human"],
+			"es": ["Lodge", "Human"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 1
 	},
 	{
 		"name": {
@@ -614,6 +712,20 @@ let monsters = [
 		},
 		"expansion": "Base Game",
 		"quantity": 1
+	},
+	{
+		"name": {
+			"en": "Menacing Bulk",
+			"it": "Menacing Bulk",
+			"es": "Menacing Bulk"
+		},
+		"type": {
+			"en": ["Gug"],
+			"it": ["Gug"],
+			"es": ["Gug"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 2
 	},
 	{
 		"name": {
@@ -740,6 +852,20 @@ let monsters = [
 		},
 		"expansion": "Base Game",
 		"quantity": 1
+	},
+	{
+		"name": {
+			"en": "Raging Poltergeist",
+			"it": "Raging Poltergeist",
+			"es": "Raging Poltergeist"
+		},
+		"type": {
+			"en": ["Angry", "Spirit"],
+			"it": ["Angry", "Spirit"],
+			"es": ["Angry", "Spirit"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 3
 	},
 	{
 		"name": {
@@ -883,6 +1009,20 @@ let monsters = [
 	},
 	{
 		"name": {
+			"en": "Stalking Wraith",
+			"it": "Stalking Wraith",
+			"es": "Stalking Wraith"
+		},
+		"type": {
+			"en": ["Hostile", "Spirit"],
+			"it": ["Hostile", "Spirit"],
+			"es": ["Hostile", "Spirit"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 2
+	},
+	{
+		"name": {
 			"en": "Swift Byakhee",
 			"it": "Byakhee Fulmineo",
 			"es": "Byakhee veloz"
@@ -908,6 +1048,20 @@ let monsters = [
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
+	},
+	{
+		"name": {
+			"en": "Taloned Cannibal",
+			"it": "Taloned Cannibal",
+			"es": "Taloned Cannibal"
+		},
+		"type": {
+			"en": ["Ghast"],
+			"it": ["Ghast"],
+			"es": ["Ghast"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 2
 	},
 	{
 		"name": {
@@ -949,6 +1103,34 @@ let monsters = [
 			"es": ["Perro de Tíndalos"]
 		},
 		"expansion": "Base Game",
+		"quantity": 1
+	},
+	{
+		"name": {
+			"en": "Tunneling Dhole",
+			"it": "Tunneling Dhole",
+			"es": "Tunneling Dhole"
+		},
+		"type": {
+			"en": ["Aberration"],
+			"it": ["Aberration"],
+			"es": ["Aberration"]
+		},
+		"expansion": "Secrets of the Order",
+		"quantity": 1
+	},
+	{
+		"name": {
+			"en": "Twilight Sentry",
+			"it": "Twilight Sentry",
+			"es": "Twilight Sentry"
+		},
+		"type": {
+			"en": ["Lodge", "Human"],
+			"it": ["Lodge", "Human"],
+			"es": ["Lodge", "Human"]
+		},
+		"expansion": "Secrets of the Order",
 		"quantity": 1
 	},
 	{

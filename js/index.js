@@ -45,6 +45,7 @@ function makeSelector(options) {
     const onChangeFuncPath = options.onChange;
     const triggerChange    = options.trigger;
     
+    selectorElement.classList.add('selector');
     selectorElement.classList.add('hidden-selector');
     selectorElement.setAttribute('data-onchange', onChangeFuncPath);
 
@@ -204,7 +205,8 @@ function selectorOverlay(selectorElement, show) {
         overlayElement = document.createElement('div');
         overlayElement.classList.add('browser-selector-overlay');
         overlayElement.style.display = 'none';
-        parentTab.insertBefore(overlayElement, parentTab.children[0]);
+        // parentTab.insertBefore(overlayElement, parentTab.children[0]);
+        parentTab.appendChild(overlayElement);
 
         overlayElement.addEventListener('click', ($ev) => {
             selectorElement.dispatchEvent(new Event('change'));

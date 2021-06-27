@@ -25,6 +25,8 @@ languages["en"] = {
         "OPTION_EXPANSIONS_DON_DESCRIPTION" : "2019. Dead of Night",
         "OPTION_EXPANSIONS_UDW_TITLE" : "",
         "OPTION_EXPANSIONS_UDW_DESCRIPTION" : "2020. Under Dark Waves",
+        "OPTION_EXPANSIONS_SOO_TITLE" : "",
+        "OPTION_EXPANSIONS_SOO_DESCRIPTION" : "2021. Secrets of the Order",
         "SPECIFIC_MONSTERS": "Specific monsters",
         "ALL_TYPE_MONSTERS": "All <strong>%1</strong> monsters",
         "NO_MONSTERS": "No monsters",
