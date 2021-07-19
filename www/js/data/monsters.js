@@ -100,7 +100,7 @@ let monsters = [
 	{
 		"name": {
 			"en": "Bloody Titan",
-			"it": "Bloody Titan",
+			"it": "Titano Sanguinario",
 			"es": "Bloody Titan"
 		},
 		"type": {
@@ -212,12 +212,12 @@ let monsters = [
 	{
 		"name": {
 			"en": "Coursing Hound",
-			"it": "Coursing Hound",
+			"it": "Segugio Braccante",
 			"es": "Coursing Hound"
 		},
 		"type": {
 			"en": ["Hound of Tindalos"],
-			"it": ["Hound of Tindalos"],
+			"it": ["Segugio di Tindalos"],
 			"es": ["Hound of Tindalos"]
 		},
 		"expansion": "Secrets of the Order",
@@ -240,7 +240,7 @@ let monsters = [
 	{
 		"name": {
 			"en": "Crazed Fiend",
-			"it": "Crazed Fiend",
+			"it": "Demone Invasato",
 			"es": "Crazed Fiend"
 		},
 		"type": {
@@ -436,7 +436,7 @@ let monsters = [
 	{
 		"name": {
 			"en": "Gluttonous Giant",
-			"it": "Gluttonous Giant",
+			"it": "Gigante Ingordo",
 			"es": "Gluttonous Giant"
 		},
 		"type": {
@@ -478,12 +478,12 @@ let monsters = [
 	{
 		"name": {
 			"en": "Haunting Dead",
-			"it": "Haunting Dead",
+			"it": "Presenza Mortifera",
 			"es": "Haunting Dead"
 		},
 		"type": {
 			"en": ["Troubled", "Spirit"],
-			"it": ["Troubled", "Spirit"],
+			"it": ["Inquieto", "Spirito"],
 			"es": ["Troubled", "Spirit"]
 		},
 		"expansion": "Secrets of the Order",
@@ -632,12 +632,12 @@ let monsters = [
 	{
 		"name": {
 			"en": "Lodge Guardian",
-			"it": "Lodge Guardian",
+			"it": "Guardiano della Loggia",
 			"es": "Lodge Guardian"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
-			"it": ["Lodge", "Human"],
+			"it": ["Loggia", "Umano"],
 			"es": ["Lodge", "Human"]
 		},
 		"expansion": "Secrets of the Order",
@@ -660,12 +660,12 @@ let monsters = [
 	{
 		"name": {
 			"en": "Lodge Seer",
-			"it": "Lodge Seer",
+			"it": "Profetessa della Loggia",
 			"es": "Lodge Seer"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
-			"it": ["Lodge", "Human"],
+			"it": ["Loggia", "Umano"],
 			"es": ["Lodge", "Human"]
 		},
 		"expansion": "Secrets of the Order",
@@ -716,7 +716,7 @@ let monsters = [
 	{
 		"name": {
 			"en": "Menacing Bulk",
-			"it": "Menacing Bulk",
+			"it": "Mole Minacciosa",
 			"es": "Menacing Bulk"
 		},
 		"type": {
@@ -856,12 +856,12 @@ let monsters = [
 	{
 		"name": {
 			"en": "Raging Poltergeist",
-			"it": "Raging Poltergeist",
+			"it": "Poltergeist Infuriato",
 			"es": "Raging Poltergeist"
 		},
 		"type": {
 			"en": ["Angry", "Spirit"],
-			"it": ["Angry", "Spirit"],
+			"it": ["Adirato", "Spirito"],
 			"es": ["Angry", "Spirit"]
 		},
 		"expansion": "Secrets of the Order",
@@ -1010,12 +1010,12 @@ let monsters = [
 	{
 		"name": {
 			"en": "Stalking Wraith",
-			"it": "Stalking Wraith",
+			"it": "Wraith Inseguitore",
 			"es": "Stalking Wraith"
 		},
 		"type": {
 			"en": ["Hostile", "Spirit"],
-			"it": ["Hostile", "Spirit"],
+			"it": ["Ostile", "Spirito"],
 			"es": ["Hostile", "Spirit"]
 		},
 		"expansion": "Secrets of the Order",
@@ -1052,7 +1052,7 @@ let monsters = [
 	{
 		"name": {
 			"en": "Taloned Cannibal",
-			"it": "Taloned Cannibal",
+			"it": "Cannibale Artigliato",
 			"es": "Taloned Cannibal"
 		},
 		"type": {
@@ -1108,12 +1108,12 @@ let monsters = [
 	{
 		"name": {
 			"en": "Tunneling Dhole",
-			"it": "Tunneling Dhole",
+			"it": "Dhole Scavatore",
 			"es": "Tunneling Dhole"
 		},
 		"type": {
 			"en": ["Aberration"],
-			"it": ["Aberration"],
+			"it": ["Aberrazione"],
 			"es": ["Aberration"]
 		},
 		"expansion": "Secrets of the Order",
@@ -1122,12 +1122,12 @@ let monsters = [
 	{
 		"name": {
 			"en": "Twilight Sentry",
-			"it": "Twilight Sentry",
+			"it": "Sentinella del Crepuscolo",
 			"es": "Twilight Sentry"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
-			"it": ["Lodge", "Human"],
+			"it": ["Loggia", "Umano"],
 			"es": ["Lodge", "Human"]
 		},
 		"expansion": "Secrets of the Order",
