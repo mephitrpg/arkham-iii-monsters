@@ -1,8 +1,36 @@
 var _s = s;
 var app_started = new Date();
 
+function isBrowser() {
+    return device.platform === 'browser';
+}
+
+function isAndroid() {
+    if (!isBrowser()) return device.platform === "Android";
+    return !!navigator.userAgent.match(/Android/);
+}
+
+function isIOS() {
+    if (!isBrowser()) device.platform === "iOS";
+    return !!( navigator.userAgent.match(/iPhone/) || navigator.userAgent.match(/iPad/) );
+}
+
+function isDesktop() {
+    return !isMobile();
+}
+
+function isMobile() {
+    if (isAndroid()) return true;
+    if (isIOS()) return true;
+    const platform = device.platform;
+    if (platform === 'WinCE') return true;
+    if (platform === 'Tizen') return true;
+    if (platform === 'BlackBerry 10') return true;
+    return false;
+}
+
 function filePath(path) {
-    return ( device.platform === "Android" ? "/android_asset/www" : "" ) + path;
+    return ( isAndroid() ? "/android_asset/www" : "" ) + path;
 }
 
 function setPseudoElContent(selector, value) {    
@@ -57,19 +85,7 @@ function makeSelector(options) {
     styleElement.id = selectorElement.id + '-style';
     document.querySelector('head').appendChild(styleElement);
 
-    if (device.platform !== 'browser') {
-
-        linkElement.addEventListener('click', (ev) => {
-            var e = document.createEvent('MouseEvents');
-            e.initMouseEvent('mousedown', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-            selectorElement.dispatchEvent(e);
-        });
-    
-        selectorElement.addEventListener('change', () => {
-            linkElement.textContent = selectorElement.options[selectorElement.selectedIndex].text;
-        });
-    
-    } else {
+    if (isBrowser()) {
 
         linkElement.addEventListener('click', (ev) => {
             selectorElement.setAttribute('size', selectorElement.options.length);
@@ -98,6 +114,18 @@ function makeSelector(options) {
                 }
             `;
 
+        });
+
+    } else {
+
+        linkElement.addEventListener('click', (ev) => {
+            var e = document.createEvent('MouseEvents');
+            e.initMouseEvent('mousedown', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            selectorElement.dispatchEvent(e);
+        });
+    
+        selectorElement.addEventListener('change', () => {
+            linkElement.textContent = selectorElement.options[selectorElement.selectedIndex].text;
         });
     
     }

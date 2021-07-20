@@ -152,7 +152,7 @@ let scenarios = [
         ]
     },
     {
-        "name": { "en": "The Key and The Gate", "it": "The Key and The Gate", "es": "The Key and The Gate" },
+        "name": { "en": "The Key and The Gate", "it": "La Chiave e la Porta", "es": "The Key and The Gate" },
         "expansion": "Secrets of the Order",
         "monsterGropus": [
             { "name": {"en": "Monster Deck", "it": "Mazzo dei Mostri", "es": "Mazo de Monstruos"}, "monsters": [
@@ -171,7 +171,7 @@ let scenarios = [
         ]
     },
     {
-        "name": { "en": "The Dead Cry Out", "it": "The Dead Cry Out", "es": "The Dead Cry Out" },
+        "name": { "en": "The Dead Cry Out", "it": "Il Lamento dei Morti", "es": "The Dead Cry Out" },
         "expansion": "Secrets of the Order",
         "monsterGropus": [
             { "name": {"en": "Monster Deck", "it": "Mazzo dei Mostri", "es": "Mazo de Monstruos"}, "monsters": [
@@ -189,7 +189,7 @@ let scenarios = [
         ]
     },
     {
-        "name": { "en": "Bound to Serve", "it": "Bound to Serve", "es": "Bound to Serve" },
+        "name": { "en": "Bound to Serve", "it": "Vincolo di Servitù", "es": "Bound to Serve" },
         "expansion": "Secrets of the Order",
         "monsterGropus": [
             { "name": {"en": "Monster Deck", "it": "Mazzo dei Mostri", "es": "Mazo de Monstruos"}, "monsters": [
@@ -202,6 +202,18 @@ let scenarios = [
             ]},
             { "name": {"en": "Set aside", "it": "Messi da parte", "es": "Apartar a un lado"}, "monsters": [
                 { "type": "Lodge", "quantity": "all" }
+            ]}
+        ]
+    },
+    {
+        "name": { "en": "Echoes of the Deep", "it": "Echi dal Profondo", "es": "Ecos de las profundidades" },
+        "expansion": "Base Game",
+        "monsterGropus": [
+            { "name": {"en": "Monster Deck", "it": "Mazzo dei Mostri", "es": "Mazo de Monstruos"}, "monsters": [
+                { "id": "R'lyeh Guardian", "quantity": 1 },
+                { "id": "Hooded Stalker", "quantity": 2 },
+                { "id": "Occult Ritualist", "quantity": 2 },
+                { "type": "Deep One", "quantity": "all" }
             ]}
         ]
     }
