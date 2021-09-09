@@ -5,10 +5,11 @@
   "description": "Monster Deck setup helper for Arkham Horror Third Edition",
   "main": "index.js",
   "scripts": {
-    "android": "cordova run android --device",
-    "ios": "cordova run ios --device",
+    "android": "node_modules\\.bin\\cordova run android --device",
+    "ios": "node_modules\\.bin\\cordova run ios --device",
+    "browser": "node_modules\\.bin\\cordova run browser",
     "connect": "adb tcpip 5555 && adb connect 192.168.1.123",
-    "dist": "cordova build android --release --buildConfig certificates/build.json",
+    "dist": "node_modules\\.bin\\cordova build android --release --buildConfig certificates/build.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
