@@ -1123,7 +1123,7 @@ let monsters = [
 		"name": {
 			"en": "Twilight Sentry",
 			"it": "Sentinella del Crepuscolo",
-			"es": "Sentinela del crepúsculo"
+			"es": "Centinela del crepúsculo"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
