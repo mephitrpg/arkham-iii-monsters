@@ -6,6 +6,7 @@ languages["es"] = {
         "SOUNDS": "Sonidos",
         "DEFAULT_OCR_TEXT": "Encuadrar un monstruo",
         "TAB_MONSTERS": "Monstruos",
+        "TAB_DECK": "Mazo",
         "TAB_OPTIONS": "Opciones",
         "OPTION_LANGUAGE_TITLE" : "Idioma",
         "OPTION_LANGUAGE_DESCRIPTION" : "",

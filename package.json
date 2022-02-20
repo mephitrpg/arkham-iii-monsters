@@ -8,8 +8,10 @@
     "android": "node_modules\\.bin\\cordova run android --device",
     "ios": "node_modules\\.bin\\cordova run ios --device",
     "browser": "node_modules\\.bin\\cordova run browser",
+    "browser-watch": "sync-files --watch www platforms\\browser\\www",
     "connect": "adb tcpip 5555 && adb connect 192.168.1.123",
     "dist": "node_modules\\.bin\\cordova build android --release --buildConfig certificates/build.json",
+    "prepare": "node_modules\\.bin\\cordova prepare",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -46,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "cordova-plugin-whitelist": "^1.3.4"
+    "cordova-plugin-whitelist": "^1.3.4",
+    "sync-files": "^1.0.3"
   }
 }

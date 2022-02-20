@@ -6,6 +6,7 @@ languages["en"] = {
         "SOUNDS": "Sounds",
         "DEFAULT_OCR_TEXT": "Frame a Monster",
         "TAB_MONSTERS": "Monsters",
+        "TAB_DECK": "Deck",
         "TAB_OPTIONS": "Options",
         "OPTION_LANGUAGE_TITLE" : "Language",
         "OPTION_LANGUAGE_DESCRIPTION" : "",

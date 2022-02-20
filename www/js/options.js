@@ -56,7 +56,7 @@ var options = {
             onChange: 'options.onLangChange',
         });
 
-        if (device.platform !== 'browser') {
+        if (this.isOCRavailable) {
 
             // sound
             const soundElement = this.soundElement = document.getElementById('options-sound-switch');

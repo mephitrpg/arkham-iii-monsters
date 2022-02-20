@@ -6,6 +6,7 @@ languages["it"] = {
         "SOUNDS": "Suoni",
         "DEFAULT_OCR_TEXT": "Inquadra un Mostro",
         "TAB_MONSTERS": "Mostri",
+        "TAB_DECK": "Mazzo",
         "TAB_OPTIONS": "Opzioni",
         "OPTION_LANGUAGE_TITLE" : "Lingua",
         "OPTION_LANGUAGE_DESCRIPTION" : "",
