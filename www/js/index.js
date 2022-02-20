@@ -401,39 +401,47 @@ var app = {
     },
 
     onPause: function() {
-        if (options.readOption('ocr')) this.stopCamera();
-        this.sounds.ok.media.stop();
-        this.sounds.ko.media.stop();
+        if (this.isOCRavailable) {
+            if (options.readOption('ocr')) this.stopCamera();
+            this.sounds.ok.media.stop();
+            this.sounds.ko.media.stop();
+        }
     },
 
     onResume: function() {
-        if (options.readOption('ocr')) this.startCamera();
+        if (this.isOCRavailable) {
+            if (options.readOption('ocr')) this.startCamera();
+        }
     },
 
     onTabActive: {
         'monsters': function() {
-            if (this.optionOcrWas === null) {
-                this.optionOcrWas = !options.readOption('ocr');
-                this.optionCountWas = !options.readOption('count');
-            }
-            if (options.readOption('ocr')) {
-                this.showOcr();
-                this.startCamera();
-            } else {
-                this.hideOcr();
-            }
-            if ( options.readOption('ocr') !== this.optionOcrWas || options.readOption('count') !== this.optionCountWas  ) {
-                this.optionOcrWas = options.readOption('ocr');
-                this.optionCountWas = options.readOption('count');
-                this.renderScenario();
+            if (this.isOCRavailable) {
+                if (this.optionOcrWas === null) {
+                    this.optionOcrWas = !options.readOption('ocr');
+                    this.optionCountWas = !options.readOption('count');
+                }
+                if (options.readOption('ocr')) {
+                    this.showOcr();
+                    this.startCamera();
+                } else {
+                    this.hideOcr();
+                }
+                if ( options.readOption('ocr') !== this.optionOcrWas || options.readOption('count') !== this.optionCountWas  ) {
+                    this.optionOcrWas = options.readOption('ocr');
+                    this.optionCountWas = options.readOption('count');
+                    this.renderScenario();
+                }
             }
         },
         'deck': function() {
 
         },
         'options': function() {
-            if (options.readOption('ocr')) {
-                this.stopCamera();
+            if (this.isOCRavailable) {
+                if (options.readOption('ocr')) {
+                    this.stopCamera();
+                }
             }
         },
     },
