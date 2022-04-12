@@ -225,7 +225,7 @@ function renameSelectorOptions(options) {
 
 function selectorOverlay(selectorElement, show) {
 
-    const parentTab = $(selectorElement).closest('.app-ui-tab').get(0);
+    const parentTab = $(selectorElement).closest('.js-tab-content').get(0);
     let overlayElement = parentTab.querySelector('.browser-selector-overlay');
 
     if (!overlayElement) {
@@ -315,28 +315,35 @@ var app = {
 
     prepareApp: function() {
 
+        this.isOCRavailable           = !isBrowser();
         this.appElement               = document.getElementById('app');
         
         // this.snapshotElement          = document.getElementById('snapshot');
         this.ocrBlockElement          = document.getElementById('card-ocr-block');
-        this.monstersContentElement   = document.getElementById('app-ui');
-        this.optionsContentElement    = document.getElementById('app-options');
+        this.tabElements              = {};
+        this.tabContentElements       = {};
+        document.querySelectorAll('[data-tab-key]').forEach(tabElement => {
+            const tabKey = tabElement.getAttribute('data-tab-key');
+            this.tabElements[tabKey] = document.querySelector('[data-tab-key="' + tabKey + '"]');
+            this.tabContentElements[tabKey] = document.querySelector('[data-tab-content-key="' + tabKey + '"]');
+        });
 
-        this.ocrTextElement           = document.getElementById('card-name');
         this.monsterListELement       = document.getElementById('monster-list');
         this.scenarioSelector         = document.getElementById('scenario-selector');
         // this.scenarioNameElement      = document.getElementById('scenario-name');
 
-        this.ocrTextElement.innerHTML = l('DEFAULT_OCR_TEXT');
-
-        // const filepathBG              = filePath("/sounds/bg.wav");
-        const filepathOK              = filePath("/sounds/match-yes.mp3");
-        const filepathKO              = filePath("/sounds/match-no.mp3");
-        // mdls command in terminal to get file duration in seconds
-        this.sounds.ok                = {media: new Media(filepathOK), duration: 3736};
-        this.sounds.ko                = {media: new Media(filepathKO), duration: 3736};
-        // this.sounds.bg                = {media: new Media(filepathBG), duration: };
-
+        if (this.isOCRavailable) {
+            this.ocrTextElement           = document.getElementById('card-name');
+            this.ocrTextElement.innerHTML = l('DEFAULT_OCR_TEXT');
+                // const filepathBG              = filePath("/sounds/bg.wav");
+            const filepathOK              = filePath("/sounds/match-yes.mp3");
+            const filepathKO              = filePath("/sounds/match-no.mp3");
+            // mdls command in terminal to get file duration in seconds
+            this.sounds.ok                = {media: new Media(filepathOK), duration: 3736};
+            this.sounds.ko                = {media: new Media(filepathKO), duration: 3736};
+            // this.sounds.bg                = {media: new Media(filepathBG), duration: };
+        }
+        
         expansions = expansions.map(item => new Expansion(item));
 
         monsters = monsters.map(item => new Monster(item));
@@ -355,18 +362,11 @@ var app = {
         // this.sound('bg', 12000);
         
         // tab bar
-        makeTabs([
-            [
-                document.getElementById('tab-bar-monsters'),
-                this.monstersContentElement,
-                this.onTabMonstersActive.bind(this),
-            ],
-            [
-                document.getElementById('tab-bar-options'),
-                this.optionsContentElement,
-                this.onTabOptionsActive.bind(this),
-            ],
-        ]);
+        makeTabs(Object.keys(this.tabContentElements).map(tabKey => [
+                this.tabElements[tabKey],
+                this.tabContentElements[tabKey],
+                this.onTabActive[tabKey].bind(this),
+        ]));
 
         makeSelector({
             element: this.scenarioSelector,
@@ -401,37 +401,49 @@ var app = {
     },
 
     onPause: function() {
-        if (options.readOption('ocr')) this.stopCamera();
-        this.sounds.ok.media.stop();
-        this.sounds.ko.media.stop();
+        if (this.isOCRavailable) {
+            if (options.readOption('ocr')) this.stopCamera();
+            this.sounds.ok.media.stop();
+            this.sounds.ko.media.stop();
+        }
     },
 
     onResume: function() {
-        if (options.readOption('ocr')) this.startCamera();
-    },
-
-    onTabMonstersActive: function() {
-        if (this.optionOcrWas === null) {
-            this.optionOcrWas = !options.readOption('ocr');
-            this.optionCountWas = !options.readOption('count');
-        }
-        if (options.readOption('ocr')) {
-            this.showOcr();
-            this.startCamera();
-        } else {
-            this.hideOcr();
-        }
-        if ( options.readOption('ocr') !== this.optionOcrWas || options.readOption('count') !== this.optionCountWas  ) {
-            this.optionOcrWas = options.readOption('ocr');
-            this.optionCountWas = options.readOption('count');
-            this.renderScenario();
+        if (this.isOCRavailable) {
+            if (options.readOption('ocr')) this.startCamera();
         }
     },
 
-    onTabOptionsActive: function() {
-        if (options.readOption('ocr')) {
-            this.stopCamera();
-        }
+    onTabActive: {
+        'monsters': function() {
+            if (this.isOCRavailable) {
+                if (this.optionOcrWas === null) {
+                    this.optionOcrWas = !options.readOption('ocr');
+                    this.optionCountWas = !options.readOption('count');
+                }
+                if (options.readOption('ocr')) {
+                    this.showOcr();
+                    this.startCamera();
+                } else {
+                    this.hideOcr();
+                }
+                if ( options.readOption('ocr') !== this.optionOcrWas || options.readOption('count') !== this.optionCountWas  ) {
+                    this.optionOcrWas = options.readOption('ocr');
+                    this.optionCountWas = options.readOption('count');
+                    this.renderScenario();
+                }
+            }
+        },
+        'deck': function() {
+
+        },
+        'options': function() {
+            if (this.isOCRavailable) {
+                if (options.readOption('ocr')) {
+                    this.stopCamera();
+                }
+            }
+        },
     },
 
     showOcr: function() {
@@ -445,8 +457,10 @@ var app = {
     selectScenario: function(event) {
         const scenarioId = event.target.value;
         options.saveOption('scenarioId', scenarioId);
-        this.scenario = this.getScenarioById(scenarioId);
+        const scenario = this.scenario = this.getScenarioById(scenarioId);
+        this.decks = scenario.getGroupedMonsters().map(group => new Deck(group));
         this.renderScenario();
+        this.renderDeck();
     },
 
     getMonsterByOcr: function(name) {
@@ -643,9 +657,13 @@ var app = {
         this.applyCountOption();
     },
 
+    renderDeck: function() {
+        this.deck;
+    },
+
     applyCountOption: function() {
         const action = options.readOption('count') ? 'add' : 'remove';
-        this.monstersContentElement.classList[action]('count');
+        this.tabContentElements['monsters'].classList[action]('count');
     },
 
     sound: function(q, loop) {

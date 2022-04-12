@@ -72,17 +72,6 @@ body {
     display: none;
 }
 
-.app-ui ,
-.app-options {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    background-color: black;
-}
-
 .ocr .app-ui {
     top: 33%;
 }

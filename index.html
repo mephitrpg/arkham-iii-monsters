@@ -43,7 +43,7 @@
         <div class="app" id="app" style="visibility: hidden;">
             <!-- <div id="snapshot" class="snapshot"></div> -->
             <div id="card-ocr-block" class="card-ocr-block"></div>
-            <div id="app-ui" class="app-ui-tab app-ui active">
+            <div id="app-ui" data-tab-content-key="monsters" class="js-tab-content tab-content app-ui active">
                 <div id="card-name" class="card-name"></div>
                 <div class="app-content">
                     <label class="scenario-name">
@@ -52,7 +52,11 @@
                     <div id="monster-list"></div>
                 </div>
             </div>
-            <div id="app-options" class="app-ui-tab app-options">
+            <!--
+            <div id="app-deck" data-tab-content-key="deck" class="js-tab-content tab-content app-deck">
+            </div>
+            -->
+            <div id="app-options" data-tab-content-key="options" class="js-tab-content tab-content app-options">
                 <div class="app-content">
                     <div class="options-row">
                         <div>
@@ -134,8 +138,11 @@
                 </div>
             </div>
             <div id="tab-bar" class="tab-bar">
-                <div id="tab-bar-monsters" data-lang="TAB_MONSTERS"></div>
-                <div id="tab-bar-options" data-lang="TAB_OPTIONS"></div>
+                <div id="tab-bar-monsters" data-lang="TAB_MONSTERS" data-tab-key="monsters"></div>
+                <!--
+                <div id="tab-bar-deck" data-lang="TAB_DECK" data-tab-key="deck"></div>
+                -->
+                <div id="tab-bar-options" data-lang="TAB_OPTIONS" data-tab-key="options"></div>
             </div>        
         </div>
         <script src="cordova.js"></script>
@@ -190,6 +197,7 @@
         <script src="js/lib/Expansion.js"></script>
         <script src="js/lib/Monster.js"></script>
         <script src="js/lib/Scenario.js"></script>
+        <script src="js/lib/Deck.js"></script>
         
         <!--
         <script>
