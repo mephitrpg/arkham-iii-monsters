@@ -1,6 +1,6 @@
 {
   "name": "ah3m",
-  "displayName": "Jure di Mephit",
+  "displayName": "Arkham III Monsters",
   "version": "1.0.0",
   "description": "Monster Deck setup helper for Arkham Horror Third Edition",
   "main": "index.js",
@@ -17,7 +17,7 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "Jure di Mephit",
   "license": "Apache-2.0",
   "dependencies": {
     "cordova": "^10.0.0",
