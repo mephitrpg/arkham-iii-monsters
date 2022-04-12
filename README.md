@@ -28,4 +28,4 @@ Italiano, English, Español.
 https://mephitrpg.github.io/arkham-iii-monsters
 
 * OPEN SOURCE\
-https://www.github.com/mephitrpg/arkham-iii-monsters
+https://github.com/mephitrpg/arkham-iii-monsters
