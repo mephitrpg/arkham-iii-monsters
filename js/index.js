@@ -11,7 +11,7 @@ function isAndroid() {
 }
 
 function isIOS() {
-    if (!isBrowser()) device.platform === "iOS";
+    if (!isBrowser()) return device.platform === "iOS";
     return !!( navigator.userAgent.match(/iPhone/) || navigator.userAgent.match(/iPad/) );
 }
 
