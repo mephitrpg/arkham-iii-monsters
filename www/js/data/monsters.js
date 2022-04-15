@@ -71,7 +71,7 @@ let monsters = [
 			"fr": "Serviteur Altéré"
 		},
 		"type": {
-			"en": ["Human", "b"],
+			"en": ["Human", "Thrall"],
 			"it": ["Umano", "Servitore"],
 			"es": ["Humano", "Subyugado"],
 			"fr": ["Humain", "Thrall"]
