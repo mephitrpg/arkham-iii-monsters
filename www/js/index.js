@@ -113,14 +113,12 @@ function makeSelector(options) {
                     content: "${selectorElement.options[selectorElement.selectedIndex].text}";
                 }
             `;
-
         });
 
     } else {
 
         linkElement.addEventListener('click', (ev) => {
-            var e = document.createEvent('MouseEvents');
-            e.initMouseEvent('mousedown', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            var e = new MouseEvent('mousedown');
             selectorElement.dispatchEvent(e);
         });
     
