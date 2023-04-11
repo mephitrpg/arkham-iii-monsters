@@ -5,14 +5,14 @@ let monsters = [
 			"it": "Servitore Abissale",
 			"es": "Siervo abisal",
 			"fr": "Serviteur de l'Abîme",
-            "de": "TODO NAME"
+            "de": "Diener des Abgrunds"
 		},
 		"type": {
 			"en": ["Nightgaunt"],
 			"it": ["Magro Notturno"],
 			"es": ["Ángel descarnado"],
 			"fr": ["Maigre Bête de la Nuit"],
-            "de": ["TODO TYPE"]
+            "de": ["Dunkeldürrer"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -23,14 +23,14 @@ let monsters = [
 			"it": "Sonnambulo Maledetto",
 			"es": "Sonámbulo maldito",
 			"fr": "Somnambule Maudit",
-            "de": "TODO NAME"
+            "de": "Verfluchter Schlafwandler"
 		},
 		"type": {
 			"en": ["Dreaming", "Human"],
 			"it": ["Sognatore", "Umano"],
 			"es": ["Soñador", "Humano"],
 			"fr": ["Rêveur", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Träumend", "Mensch"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 2
@@ -41,14 +41,14 @@ let monsters = [
 			"it": "Alma Hill",
 			"es": "Alma Hill",
 			"fr": "Alma Hill",
-            "de": "TODO NAME"
+            "de": "Alma Hill"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -59,14 +59,14 @@ let monsters = [
 			"it": "Bestia Mutante",
 			"es": "Bestia alterada",
 			"fr": "Bête Altérée",
-            "de": "TODO NAME"
+            "de": "Verändertes Tier"
 		},
 		"type": {
 			"en": ["Aberration"],
 			"it": ["Aberrazione"],
 			"es": ["Aberración"],
 			"fr": ["Aberration"],
-            "de": ["TODO TYPE"]
+            "de": ["Abnormität"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -77,14 +77,14 @@ let monsters = [
 			"it": "Servitore Mutante",
 			"es": "Siervo alterado",
 			"fr": "Serviteur Altéré",
-            "de": "TODO NAME"
+            "de": "Veränderter Diener"
 		},
 		"type": {
 			"en": ["Human", "Thrall"],
 			"it": ["Umano", "Servitore"],
 			"es": ["Humano", "Subyugado"],
 			"fr": ["Humain", "Thrall"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Marionette"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -95,14 +95,14 @@ let monsters = [
 			"it": "Servitore Volante",
 			"es": "Esclavo aviar",
 			"fr": "Thrall Aviaire",
-            "de": "TODO NAME"
+            "de": "Geflügelte Marionette"
 		},
 		"type": {
 			"en": ["Thrall"],
 			"it": ["Servitore"],
 			"es": ["Subyugado"],
 			"fr": ["Thrall"],
-            "de": ["TODO TYPE"]
+            "de": ["Marionette"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -113,14 +113,14 @@ let monsters = [
 			"it": "Billy Cooper",
 			"es": "Billy Cooper",
 			"fr": "Billy Cooper",
-            "de": "TODO NAME"
+            "de": "Billy Cooper"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -131,14 +131,14 @@ let monsters = [
 			"it": "Titano Sanguinario",
 			"es": "Titán sangriento",
 			"fr": "Titan Sanguinaire",
-            "de": "TODO NAME"
+            "de": "Bluttitan"
 		},
 		"type": {
 			"en": ["Gug"],
 			"it": ["Gug"],
 			"es": ["Gug"],
 			"fr": ["Gug"],
-            "de": ["TODO TYPE"]
+            "de": ["Gug"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 1
@@ -149,14 +149,14 @@ let monsters = [
 			"it": "Folla Inferocita",
 			"es": "Turba de linchamiento",
 			"fr": "Emeute Enfiévrée",
-            "de": "TODO NAME"
+            "de": "Prügelnder Mob"
 		},
 		"type": {
 			"en": ["Human", "Mob"],
 			"it": ["Umano", "Orda"],
 			"es": ["Humano", "Muchedumbre"],
 			"fr": ["Humain", "Foule"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Mob"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 1
@@ -167,14 +167,14 @@ let monsters = [
 			"it": "Scagnozzi Violenti",
 			"es": "Esbirros brutales",
 			"fr": "Hommes de Main Brutaux",
-            "de": "TODO NAME"
+            "de": "Brutale Schläger"
 		},
 		"type": {
 			"en": ["Sheldon", "Human"],
 			"it": ["Sheldon", "Umano"],
 			"es": ["Sheldon", "Humano"],
 			"fr": ["Sheldon", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Sheldon", "Mensch"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 2
@@ -185,14 +185,14 @@ let monsters = [
 			"it": "Voce di R'lyeh",
 			"es": "Cantor supremo de R'lyeh",
 			"fr": "Chantre de R'lyeh",
-            "de": "TODO NAME"
+            "de": "Sänger von R'lyeh"
 		},
 		"type": {
 			"en": ["Star Spawn"],
 			"it": ["Progenie Stellare"],
 			"es": ["Semilla estelar"],
 			"fr": ["Larve Stellaire"],
-            "de": ["TODO TYPE"]
+            "de": ["Sternengezücht"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -203,14 +203,14 @@ let monsters = [
 			"it": "Inseguitore Volubile",
 			"es": "Acechador veleidoso",
 			"fr": "Traqueur Capricieux",
-            "de": "TODO NAME"
+            "de": "Sprunghafter Pirscher"
 		},
 		"type": {
 			"en": ["Nightgaunt"],
 			"it": ["Magro Notturno"],
 			"es": ["Ángel descarnado"],
 			"fr": ["Maigre Bête de la Nuit"],
-            "de": ["TODO TYPE"]
+            "de": ["Dunkeldürrer"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 1
@@ -221,14 +221,14 @@ let monsters = [
 			"it": "Estrattore Cerebrale",
 			"es": "Extractor de cerebros",
 			"fr": "Extracteur Cérébral",
-            "de": "TODO NAME"
+            "de": "Hirnextraktor"
 		},
 		"type": {
 			"en": ["Mi-Go"],
 			"it": ["Mi-Go"],
 			"es": ["Mi-Go"],
 			"fr": ["Mi-Go"],
-            "de": ["TODO TYPE"]
+            "de": ["Mi-Go"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 1
@@ -239,14 +239,14 @@ let monsters = [
 			"it": "Corben Bouchard",
 			"es": "Corben Bouchard",
 			"fr": "Corben Bouchard",
-            "de": "TODO NAME"
+            "de": "Corben Bouchard"
 		},
 		"type": {
 			"en": ["Sheldon", "Servitor"],
 			"it": ["Sheldon", "Servo"],
 			"es": ["Sheldon", "Servidor"],
 			"fr": ["Sheldon", "Laquais"],
-            "de": ["TODO TYPE"]
+            "de": ["Sheldon", "Diener"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 1
@@ -257,14 +257,14 @@ let monsters = [
 			"it": "Ladro di Cadaveri",
 			"es": "Robacadáveres",
 			"fr": "Pilleur de Cadavres",
-            "de": "TODO NAME"
+            "de": "Leichenräuber"
 		},
 		"type": {
 			"en": ["Aberration"],
 			"it": ["Aberrazione"],
 			"es": ["Aberración"],
 			"fr": ["Aberration"],
-            "de": ["TODO TYPE"]
+            "de": ["Abnormität"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -275,14 +275,14 @@ let monsters = [
 			"it": "Segugio Braccante",
 			"es": "Perro perseguidor",
 			"fr": "Chien Pourchasseur",
-            "de": "TODO NAME"
+            "de": "Gefräßiger Hetzhund"
 		},
 		"type": {
 			"en": ["Hound of Tindalos"],
 			"it": ["Segugio di Tindalos"],
 			"es": ["Perro de Tíndalos"],
 			"fr": ["Chien de Tindalos"],
-            "de": ["TODO TYPE"]
+            "de": ["Hund von Tindalos"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 1
@@ -293,14 +293,14 @@ let monsters = [
 			"it": "Strisciante",
 			"es": "Reptante",
 			"fr": "Rampant",
-            "de": "TODO NAME"
+            "de": "Kriechendes Wesen"
 		},
 		"type": {
 			"en": ["Aberration"],
 			"it": ["Aberrazione"],
 			"es": ["Aberración"],
 			"fr": ["Aberration"],
-            "de": ["TODO TYPE"]
+            "de": ["Abnormität"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 2
@@ -311,14 +311,14 @@ let monsters = [
 			"it": "Demone Invasato",
 			"es": "Ser enloquecido",
 			"fr": "Démon Psychotique",
-            "de": "TODO NAME"
+            "de": "Wahnsinniges Scheusal"
 		},
 		"type": {
 			"en": ["Ghast"],
 			"it": ["Ghast"],
 			"es": ["Ghast"],
 			"fr": ["Ghast"],
-            "de": ["TODO TYPE"]
+            "de": ["Ghast"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 1
@@ -329,14 +329,14 @@ let monsters = [
 			"it": "Ghoul Insidioso",
 			"es": "Gul furtivo",
 			"fr": "Goule Sournoise",
-            "de": "TODO NAME"
+            "de": "Umherschleichender Ghul"
 		},
 		"type": {
 			"en": ["Ghoul"],
 			"it": ["Ghoul"],
 			"es": ["Gul"],
 			"fr": ["Goule"],
-            "de": ["TODO TYPE"]
+            "de": ["Ghul"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -347,14 +347,14 @@ let monsters = [
 			"it": "Schiavista Crudele",
 			"es": "Esclavista cruel",
 			"fr": "Esclavagiste Sadique",
-            "de": "TODO NAME"
+            "de": "Grausamer Sklaventreiber"
 		},
 		"type": {
 			"en": ["Moon-Beast"],
 			"it": ["Bestia Lunare"],
 			"es": ["Bestia lunar"],
 			"fr": ["Bête Lunaire"],
-            "de": ["TODO TYPE"]
+            "de": ["Mondbestie"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -365,14 +365,14 @@ let monsters = [
 			"it": "Declan Pearce",
 			"es": "Declan Pearce",
 			"fr": "Declan Pearce",
-            "de": "TODO NAME"
+            "de": "Declan Pearce"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -383,14 +383,14 @@ let monsters = [
 			"it": "Ombra Terrificante",
 			"es": "Sombra pavorosa",
 			"fr": "Ombre Angoissante",
-            "de": "TODO NAME"
+            "de": "Schatten der Angst"
 		},
 		"type": {
 			"en": ["Shantak", "Servitor"],
 			"it": ["Shantak", "Servo"],
 			"es": ["Shantak", "Servidor"],
 			"fr": ["Shantak", "Laquais"],
-            "de": ["TODO TYPE"]
+            "de": ["Shantak", "Diener"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -401,14 +401,14 @@ let monsters = [
 			"it": "Ibrido in Estasi",
 			"es": "Híbrido embelesado",
 			"fr": "Hybride en Transe",
-            "de": "TODO NAME"
+            "de": "Verträumter Hybrid"
 		},
 		"type": {
 			"en": ["Dreaming", "Deep One"],
 			"it": ["Sognatore", "Abitatore del Profondo"],
 			"es": ["Soñador", "Profundo"],
 			"fr": ["Rêveur", "Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Träumend", "Tiefes Wesen"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -419,13 +419,14 @@ let monsters = [
 			"it": "Sognatore Rabbioso",
 			"es": "Soñador colérico",
 			"fr": "Rêveur Enragé",
-            "de": "TODO NAME"
+            "de": "Tobender Träumer"
 		},
 		"type": {
 			"en": ["Dreaming", "Human"],
 			"it": ["Sognatore", "Umano"],
 			"es": ["Soñador", "Humano"],
-			"f": ["Rêveur", "Humain"]
+			"fr": ["Rêveur", "Humain"],
+            "de": ["Träumend", "Mensch"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 2
@@ -436,14 +437,14 @@ let monsters = [
 			"it": "Osservatore Senza Occhi",
 			"es": "Vigía sin ojos",
 			"fr": "Guetteur Aveugle",
-            "de": "TODO NAME"
+            "de": "Blinder Beobachter"
 		},
 		"type": {
 			"en": ["Nightgaunt"],
 			"it": ["Magro Notturno"],
 			"es": ["Ángel descarnado"],
 			"fr": ["Maigre Bête de la Nuit"],
-            "de": ["TODO TYPE"]
+            "de": ["Dunkeldürrer"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -454,14 +455,14 @@ let monsters = [
 			"it": "Signore del Banchetto",
 			"es": "Amo devorador",
 			"fr": "Maître Ripaillant",
-            "de": "TODO NAME"
+            "de": "Schmausender Meister"
 		},
 		"type": {
 			"en": ["Moon-Beast"],
 			"it": ["Bestia Lunare"],
 			"es": ["Bestia lunar"],
 			"fr": ["Bête Lunaire"],
-            "de": ["TODO TYPE"]
+            "de": ["Mondbestie"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -472,14 +473,14 @@ let monsters = [
 			"it": "Istigatore Inetto",
 			"es": "Camorrista bravucón",
 			"fr": "Agitateur Incapable",
-            "de": "TODO NAME"
+            "de": "Feiger Unruhestifter"
 		},
 		"type": {
 			"en": ["O'Bannion", "Human"],
 			"it": ["O'Bannion", "Umano"],
 			"es": ["O'Bannion", "Humano"],
 			"fr": ["O'Bannion", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["O'Bannion", "Mensch"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 1
@@ -490,14 +491,14 @@ let monsters = [
 			"it": "Divoratore di Carni",
 			"es": "Devorador de carne",
 			"fr": "Dévoreur de Chair",
-            "de": "TODO NAME"
+            "de": "Fleischfresser"
 		},
 		"type": {
 			"en": ["Ghoul"],
 			"it": ["Ghoul"],
 			"es": ["Gul"],
 			"fr": ["Goule"],
-            "de": ["TODO TYPE"]
+            "de": ["Ghul"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -508,14 +509,14 @@ let monsters = [
 			"it": "Cacciatore Indemoniato",
 			"es": "Cazador impetuoso",
 			"fr": "Chasseur Frénétique",
-            "de": "TODO NAME"
+            "de": "Blindwütiger Jäger"
 		},
 		"type": {
 			"en": ["Deep One"],
 			"it": ["Abitatore del Profondo"],
 			"es": ["Profundo"],
 			"fr": ["Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Tiefes Wesen"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -526,14 +527,14 @@ let monsters = [
 			"it": "Ghoul Accolito",
 			"es": "Acólito gul",
 			"fr": "Acolyte Goule",
-            "de": "TODO NAME"
+            "de": "Ghul-Akolyth"
 		},
 		"type": {
 			"en": ["Ghoul", "Cultist"],
 			"it": ["Ghoul", "Cultista"],
 			"es": ["Gul", "Sectario"],
 			"fr": ["Goule", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Ghul", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -544,14 +545,14 @@ let monsters = [
 			"it": "Ghoul Sacerdote",
 			"es": "Sacerdote gul",
 			"fr": "Prêtre Goule",
-            "de": "TODO NAME"
+            "de": "Ghul-Priester"
 		},
 		"type": {
 			"en": ["Ghoul", "Cultist"],
 			"it": ["Ghoul", "Cultista"],
 			"es": ["Gul", "Sectario"],
 			"fr": ["Goule", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Ghul", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -562,14 +563,14 @@ let monsters = [
 			"it": "Gigante Ingordo",
 			"es": "Gigante ávido",
 			"fr": "Géant Glouton",
-            "de": "TODO NAME"
+            "de": "Gefräßiger Gigant"
 		},
 		"type": {
 			"en": ["Gug"],
 			"it": ["Gug"],
 			"es": ["Gug"],
 			"fr": ["Gug"],
-            "de": ["TODO TYPE"]
+            "de": ["Gug"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 1
@@ -580,14 +581,14 @@ let monsters = [
 			"it": "Ghermitore Fungino",
 			"es": "Hongo ladrón",
 			"fr": "Fungus Agrippant",
-            "de": "TODO NAME"
+            "de": "Gieriges Pilzwesen"
 		},
 		"type": {
 			"en": ["Mi-Go"],
 			"it": ["Mi-Go"],
 			"es": ["Mi-Go"],
 			"fr": ["Mi-Go"],
-            "de": ["TODO TYPE"]
+            "de": ["Mi-Go"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 2
@@ -598,14 +599,14 @@ let monsters = [
 			"it": "Bestia Guardiana",
 			"es": "Bestia guardiana",
 			"fr": "Bête Gardienne",
-            "de": "TODO NAME"
+            "de": "Bestialischer Wächter"
 		},
 		"type": {
 			"en": ["Shantak", "Servitor"],
 			"it": ["Shantak", "Servo"],
 			"es": ["Shantak", "Servidor"],
 			"fr": ["Shantak", "Laquais"],
-            "de": ["TODO TYPE"]
+            "de": ["Shantak", "Diener"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -616,14 +617,14 @@ let monsters = [
 			"it": "Presenza Mortifera",
 			"es": "Espectro difunto",
 			"fr": "Revenant",
-            "de": "TODO NAME"
+            "de": "Spukgestalt"
 		},
 		"type": {
 			"en": ["Troubled", "Spirit"],
 			"it": ["Inquieto", "Spirito"],
 			"es": ["Afligido", "Espíritu"],
 			"fr": ["Troublé", "Esprit"],
-            "de": ["TODO TYPE"]
+            "de": ["Unruhig", "Geist"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 3
@@ -634,14 +635,14 @@ let monsters = [
 			"it": "Herman Collins",
 			"es": "Herman Collins",
 			"fr": "Herman Collins",
-            "de": "TODO NAME"
+            "de": "Herman Collins"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -652,14 +653,14 @@ let monsters = [
 			"it": "Sommo Sacerdote",
 			"es": "Sumo sacerdote",
 			"fr": "Grand Prêtre",
-            "de": "TODO NAME"
+            "de": "Hohepriester"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -670,14 +671,14 @@ let monsters = [
 			"it": "Squadra d'Assalto",
 			"es": "Sicarios",
 			"fr": "Brigade de Nettoyage",
-            "de": "TODO NAME"
+            "de": "Killerkommando"
 		},
 		"type": {
 			"en": ["O'Bannion", "Human"],
 			"it": ["O'Bannion", "Umano"],
 			"es": ["O'Bannion", "Humano"],
 			"fr": ["O'Bannion", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["O'Bannion", "Mensch"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 2
@@ -688,14 +689,14 @@ let monsters = [
 			"it": "Inseguitore Incappucciato",
 			"es": "Merodeador encapuchado",
 			"fr": "Traqueur Encapuchonné",
-            "de": "TODO NAME"
+            "de": "Vermummter Verfolger"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -706,14 +707,14 @@ let monsters = [
 			"it": "Byakhee Fluttuante",
 			"es": "Byakhee rondador",
 			"fr": "Byakhee Vrombissant",
-            "de": "TODO NAME"
+            "de": "Schwebendes Byakhee"
 		},
 		"type": {
 			"en": ["Byakhee"],
 			"it": ["Byakhee"],
 			"es": ["Byakhee"],
 			"fr": ["Byakhee"],
-            "de": ["TODO TYPE"]
+            "de": ["Byakhee"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -724,14 +725,14 @@ let monsters = [
 			"it": "Servitore Deforme",
 			"es": "Esclava monstruosa",
 			"fr": "Thrall Colossal",
-            "de": "TODO NAME"
+            "de": "Groteske Marionette"
 		},
 		"type": {
 			"en": ["Human", "Thrall"],
 			"it": ["Umano", "Servitore"],
 			"es": ["Humano", "Subyugado"],
 			"fr": ["Humain", "Thrall"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Marionette"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -742,14 +743,14 @@ let monsters = [
 			"it": "Malvivente Ibrido",
 			"es": "Matón hibrido",
 			"fr": "Malfrat Hybride",
-            "de": "TODO NAME"
+            "de": "Brutaler Hybrid"
 		},
 		"type": {
 			"en": ["Human", "Deep One"],
 			"it": ["Umano", "Abitatore del Profondo"],
 			"es": ["Humano", "Profundo"],
 			"fr": ["Humain", "Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Tiefes Wesen"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -760,14 +761,14 @@ let monsters = [
 			"it": "Prigioniero del Ghiaccio",
 			"es": "Prisionero del hielo",
 			"fr": "Captif Congelé",
-            "de": "TODO NAME"
+            "de": "Gefangener im Eis"
 		},
 		"type": {
 			"en": ["Human", "Thrall"],
 			"it": ["Umano", "Servitore"],
 			"es": ["Humano", "Subyugado"],
 			"fr": ["Humain", "Thrall"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Marionette"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 2
@@ -778,14 +779,14 @@ let monsters = [
 			"it": "Segugio Lamentoso",
 			"es": "Horror aullante",
 			"fr": "Chien Tenace",
-            "de": "TODO NAME"
+            "de": "Geifernder Hetzhund"
 		},
 		"type": {
 			"en": ["Hound of Tindalos"],
 			"it": ["Segugio di Tindalos"],
 			"es": ["Perro de Tíndalos"],
 			"fr": ["Chien de Tindalos"],
-            "de": ["TODO TYPE"]
+            "de": ["Hund von Tindalos"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -796,14 +797,14 @@ let monsters = [
 			"it": "Sicario della Loggia",
 			"es": "Sicario de la Logia",
 			"fr": "Exécuteur de la Loge",
-            "de": "TODO NAME"
+            "de": "Vollstrecker der Loge"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
 			"it": ["Loggia", "Umano"],
 			"es": ["Logia", "Humano"],
 			"fr": ["Loge", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Loge", "Mensch"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -814,14 +815,14 @@ let monsters = [
 			"it": "Guardiano della Loggia",
 			"es": "Guardián de la Logia",
 			"fr": "Gardien de la Loge",
-            "de": "TODO NAME"
+            "de": "Beschützer der Loge"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
 			"it": ["Loggia", "Umano"],
 			"es": ["Logia", "Humano"],
 			"fr": ["Loge", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Loge", "Mensch"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 1
@@ -832,14 +833,14 @@ let monsters = [
 			"it": "Lealista della Loggia",
 			"es": "Adepto de la Logia",
 			"fr": "Loyaliste de la Loge",
-            "de": "TODO NAME"
+            "de": "Treues Logenmitglied"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
 			"it": ["Loggia", "Umano"],
 			"es": ["Logia", "Humano"],
 			"fr": ["Loge", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Loge", "Mensch"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -850,14 +851,14 @@ let monsters = [
 			"it": "Profetessa della Loggia",
 			"es": "Vidente de la Logia",
 			"fr": "Oracle de la Loge",
-            "de": "TODO NAME"
+            "de": "Orakel der Loge"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
 			"it": ["Loggia", "Umano"],
 			"es": ["Logia", "Humano"],
 			"fr": ["Loge", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Loge", "Mensch"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 1
@@ -868,14 +869,14 @@ let monsters = [
 			"it": "Servitore Lupesco",
 			"es": "Esclavo lobuno",
 			"fr": "Thrall Lupin",
-            "de": "TODO NAME"
+            "de": "Wolfsmarionette"
 		},
 		"type": {
 			"en": ["Thrall"],
 			"it": ["Servitore"],
 			"es": ["Subyugado"],
 			"fr": ["Thrall"],
-            "de": ["TODO TYPE"]
+            "de": ["Marionette"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -886,14 +887,14 @@ let monsters = [
 			"it": "Cacciatore Mascherato",
 			"es": "Cazador enmascarado",
 			"fr": "Chasseur Masqué",
-            "de": "TODO NAME"
+            "de": "Maskierter Jäger"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Cultista", "Umano"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -904,14 +905,14 @@ let monsters = [
 			"it": "Figura Mascherata",
 			"es": "Enmascarados",
 			"fr": "Trio Masqué",
-            "de": "TODO NAME"
+            "de": "Maskenmänner"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Cultista", "Umano"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -922,14 +923,14 @@ let monsters = [
 			"it": "Mole Minacciosa",
 			"es": "Mole amenazante",
 			"fr": "Mastodonte Menaçant",
-            "de": "TODO NAME"
+            "de": "Bedrohlicher Riese"
 		},
 		"type": {
 			"en": ["Gug"],
 			"it": ["Gug"],
 			"es": ["Gug"],
 			"fr": ["Gug"],
-            "de": ["TODO TYPE"]
+            "de": ["Gug"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 2
@@ -940,14 +941,14 @@ let monsters = [
 			"it": "Sicario della Mala",
 			"es": "Brazo ejecutor",
 			"fr": "Exécuteur de la Pègre",
-            "de": "TODO NAME"
+            "de": "Mafiaschläger"
 		},
 		"type": {
 			"en": ["O'Bannion", "Human"],
 			"it": ["Umano", "O'Bannion"],
 			"es": ["O'Bannion", "Humano"],
 			"fr": ["O'Bannion", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["O'Bannion", "Mensch"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 2
@@ -958,14 +959,14 @@ let monsters = [
 			"it": "Orrore Morfico",
 			"es": "Terror mórfico",
 			"fr": "Terreur Morphique",
-            "de": "TODO NAME"
+            "de": "Amorpher Schrecken"
 		},
 		"type": {
 			"en": ["Formless Spawn"],
 			"it": ["Progenie Informe"],
 			"es": ["Semilla informe"],
 			"fr": ["Rejeton Informe"],
-            "de": ["TODO TYPE"]
+            "de": ["Formloses Gezücht"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 1
@@ -976,14 +977,14 @@ let monsters = [
 			"it": "Sobillatore Insolente",
 			"es": "Alborotador locuaz",
 			"fr": "Orateur Verbeux",
-            "de": "TODO NAME"
+            "de": "Großmaul"
 		},
 		"type": {
 			"en": ["Sheldon", "Human"],
 			"it": ["Umano", "Sheldon"],
 			"es": ["Sheldon", "Humano"],
 			"fr": ["Sheldon", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Sheldon", "Mensch"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 1
@@ -994,14 +995,14 @@ let monsters = [
 			"it": "Demone Angosciante",
 			"es": "Ser de pesadilla",
 			"fr": "Démon Cauchemardesque",
-            "de": "TODO NAME"
+            "de": "Albtraumhaftes Scheusal"
 		},
 		"type": {
 			"en": ["Ghoul"],
 			"it": ["Ghoul"],
 			"es": ["Gul"],
 			"fr": ["Goule"],
-            "de": ["TODO TYPE"]
+            "de": ["Ghul"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1012,14 +1013,14 @@ let monsters = [
 			"it": "Ritualista dell'Occulto",
 			"es": "Mago ceremonial",
 			"fr": "Pratiquant de l'Occulte",
-            "de": "TODO NAME"
+            "de": "Okkulter Ritualist"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -1030,14 +1031,14 @@ let monsters = [
 			"it": "Prole dell'Oceano",
 			"es": "Vástago del océano",
 			"fr": "Descendant de l'Océan",
-            "de": "TODO NAME"
+            "de": "Spross des Ozeans"
 		},
 		"type": {
 			"en": ["Deep One"],
 			"it": ["Abitatore del Profondo"],
 			"es": ["Profundo"],
 			"fr": ["Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Tiefes Wesen"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -1048,14 +1049,14 @@ let monsters = [
 			"it": "Signore Pallido",
 			"es": "Señor de la lividez",
 			"fr": "Seigneur Pâle",
-            "de": "TODO NAME"
+            "de": "Bleicher Fürst"
 		},
 		"type": {
 			"en": ["Moon-Beast"],
 			"it": ["Bestia Lunare"],
 			"es": ["Bestia lunar"],
 			"fr": ["Bête Lunaire"],
-            "de": ["TODO TYPE"]
+            "de": ["Mondbestie"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -1066,14 +1067,14 @@ let monsters = [
 			"it": "Rapitore Errante",
 			"es": "Secuestrador al acecho",
 			"fr": "Ravisseur en Chasse",
-            "de": "TODO NAME"
+            "de": "Umherschleichender Entführer"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Cultista", "Umano"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 2
@@ -1084,14 +1085,14 @@ let monsters = [
 			"it": "Guardiano di R'lyeh",
 			"es": "Guardián de R'lyeh",
 			"fr": "Gardien de R'lyeh",
-            "de": "TODO NAME"
+            "de": "Wächter von R'lyeh"
 		},
 		"type": {
 			"en": ["Star Spawn"],
 			"it": ["Progenie Stellare"],
 			"es": ["Semilla estelar"],
 			"fr": ["Larve Stellaire"],
-            "de": ["TODO TYPE"]
+            "de": ["Sternengezücht"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1102,14 +1103,14 @@ let monsters = [
 			"it": "Poltergeist Infuriato",
 			"es": "Poltergeist enfurecido",
 			"fr": "Poltergeist Déchaîné",
-            "de": "TODO NAME"
+            "de": "Poltergeist"
 		},
 		"type": {
 			"en": ["Angry", "Spirit"],
 			"it": ["Adirato", "Spirito"],
 			"es": ["Iracundo", "Espíritu"],
 			"fr": ["Courroucé", "Esprit"],
-            "de": ["TODO TYPE"]
+            "de": ["Zornig", "Geist"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 3
@@ -1120,14 +1121,14 @@ let monsters = [
 			"it": "Predatore Famelico",
 			"es": "Depredador hambriento",
 			"fr": "Prédateur Vorace",
-            "de": "TODO NAME"
+            "de": "Kreischender Hund"
 		},
 		"type": {
 			"en": ["Hound of Tindalos"],
 			"it": ["Segugio di Tindalos"],
 			"es": ["Perro de Tíndalos"],
 			"fr": ["Chien de Tindalos"],
-            "de": ["TODO TYPE"]
+            "de": ["Hund von Tindalos"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1138,14 +1139,14 @@ let monsters = [
 			"it": "Aggressore del Fiume",
 			"es": "Endriago de río",
 			"fr": "Ribleur du Fleuve",
-            "de": "TODO NAME"
+            "de": "Flussschleicher"
 		},
 		"type": {
 			"en": ["Deep One"],
 			"it": ["Abitatore del Profondo"],
 			"es": ["Profundo"],
 			"fr": ["Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Tiefes Wesen"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -1156,14 +1157,14 @@ let monsters = [
 			"it": "Figura Ammantata",
 			"es": "Extraños con túnicas",
 			"fr": "Silhouette en Robes",
-            "de": "TODO NAME"
+            "de": "Verhüllte Gestalt"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 3
@@ -1174,14 +1175,14 @@ let monsters = [
 			"it": "Contrabbandiere Rude",
 			"es": "Traficante agresivo",
 			"fr": "Maquignon Scélérat",
-            "de": "TODO NAME"
+            "de": "Hartgesottener Schmuggler"
 		},
 		"type": {
 			"en": ["Sheldon", "Human"],
 			"it": ["Sheldon", "Umano"],
 			"es": ["Sheldon", "Humano"],
 			"fr": ["Sheldon", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Sheldon", "Mensch"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 2
@@ -1192,14 +1193,14 @@ let monsters = [
 			"it": "Ruth Turner",
 			"es": "Ruth Turner",
 			"fr": "Ruth Turner",
-            "de": "TODO NAME"
+            "de": "Ruth Turner"
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1210,14 +1211,14 @@ let monsters = [
 			"it": "Cantore Marino",
 			"es": "Cantor marino",
 			"fr": "Chanteur des Mers",
-            "de": "TODO NAME"
+            "de": "Sirenensänger"
 		},
 		"type": {
 			"en": ["Deep One"],
 			"it": ["Abitatore del Profondo"],
 			"es": ["Profundo"],
 			"fr": ["Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Tiefes Wesen"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1228,14 +1229,14 @@ let monsters = [
 			"it": "Predatore della Baia",
 			"es": "Depredador de bajamar",
 			"fr": "Prédateur des Bas-Fonds",
-            "de": "TODO NAME"
+            "de": "Jäger der Untiefen"
 		},
 		"type": {
 			"en": ["Deep One"],
 			"it": ["Abitatore del Profondo"],
 			"es": ["Profundo"],
 			"fr": ["Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Tiefes Wesen"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -1246,14 +1247,14 @@ let monsters = [
 			"it": "Bruto della Battigia",
 			"es": "Bestia de la ribera",
 			"fr": "Brute du Littoral",
-            "de": "TODO NAME"
+            "de": "Küstenungeheuer"
 		},
 		"type": {
 			"en": ["Deep One"],
 			"it": ["Abitatore del Profondo"],
 			"es": ["Profundo"],
 			"fr": ["Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Tiefes Wesen"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1264,14 +1265,14 @@ let monsters = [
 			"it": "Simon Carter",
 			"es": "Simon Carter",
 			"fr": "Simon Carter",
-            "de": "TODO NAME"
+            "de": "Simon Carter"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
 			"it": ["Loggia", "Umano"],
 			"es": ["Logia", "Humano"],
 			"fr": ["Loge", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Loge", "Mensch"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1282,14 +1283,14 @@ let monsters = [
 			"it": "Siobhan Riley",
 			"es": "Siobhan Riley",
 			"fr": "Siobhan Riley",
-            "de": "TODO NAME"
+            "de": "Siobhan Riley"
 		},
 		"type": {
 			"en": ["O'Bannion", "Servitor"],
 			"it": ["O'Bannion", "Servo"],
 			"es": ["O'Bannion", "Servidor"],
 			"fr": ["O'Bannion", "Laquais"],
-            "de": ["TODO TYPE"]
+            "de": ["O'Bannion", "Diener"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 1
@@ -1300,14 +1301,14 @@ let monsters = [
 			"it": "Wraith Inseguitore",
 			"es": "Alma en pena acechante",
 			"fr": "Apparition Traqueuse",
-            "de": "TODO NAME"
+            "de": "Schreckgespenst"
 		},
 		"type": {
 			"en": ["Hostile", "Spirit"],
 			"it": ["Ostile", "Spirito"],
 			"es": ["Hostil", "Espíritu"],
 			"fr": ["Hostile", "Esprit"],
-            "de": ["TODO TYPE"]
+            "de": ["Feindselig", "Geist"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 2
@@ -1318,14 +1319,14 @@ let monsters = [
 			"it": "Byakhee Fulmineo",
 			"es": "Byakhee veloz",
 			"fr": "Byakhee Véloce",
-            "de": "TODO NAME"
+            "de": "Flinkes Byakhee"
 		},
 		"type": {
 			"en": ["Byakhee"],
 			"it": ["Byakhee"],
 			"es": ["Byakhee"],
 			"fr": ["Byakhee"],
-            "de": ["TODO TYPE"]
+            "de": ["Byakhee"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1336,14 +1337,14 @@ let monsters = [
 			"it": "Necrofago Ghermitore",
 			"es": "Carroñero plneador",
 			"fr": "Charognard Ailé",
-            "de": "TODO NAME"
+            "de": "Geflügelter Aasgeier"
 		},
 		"type": {
 			"en": ["Byakhee"],
 			"it": ["Byakhee"],
 			"es": ["Byakhee"],
 			"fr": ["Byakhee"],
-            "de": ["TODO TYPE"]
+            "de": ["Byakhee"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 1
@@ -1354,14 +1355,14 @@ let monsters = [
 			"it": "Cannibale Artigliato",
 			"es": "Caníbal con garras",
 			"fr": "Anthropophage Griffu",
-            "de": "TODO NAME"
+            "de": "Klauenhand-Kannibale"
 		},
 		"type": {
 			"en": ["Ghast"],
 			"it": ["Ghast"],
 			"es": ["Ghast"],
 			"fr": ["Ghast"],
-            "de": ["TODO TYPE"]
+            "de": ["Ghast"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 2
@@ -1372,14 +1373,14 @@ let monsters = [
 			"it": "Vagabondo Terrorizzato",
 			"es": "Transeunte asustado",
 			"fr": "Vadrouilleur Terrifié",
-            "de": "TODO NAME"
+            "de": "Verängstigter Traumwandler"
 		},
 		"type": {
 			"en": ["Dreaming", "Human"],
 			"it": ["Sognatore", "Umano"],
 			"es": ["Soñador", "Humano"],
 			"fr": ["Rêveur", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Träumend", "Mensch"]
 		},
 		"expansion": "Under Dark Waves",
 		"quantity": 2
@@ -1408,14 +1409,14 @@ let monsters = [
 			"it": "Tindalos Alfa",
 			"es": "Perro de Tíndalos alfa",
 			"fr": "Tindalos Alpha",
-            "de": "TODO NAME"
+            "de": "Alpha von Tindalos"
 		},
 		"type": {
 			"en": ["Hound of Tindalos"],
 			"it": ["Segugio di Tindalos"],
 			"es": ["Perro de Tíndalos"],
 			"fr": ["Chien de Tindalos"],
-            "de": ["TODO TYPE"]
+            "de": ["Hund von Tindalos"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1426,14 +1427,14 @@ let monsters = [
 			"it": "Dhole Scavatore",
 			"es": "Dhole tunelador",
 			"fr": "Dhole Fouisseur",
-            "de": "TODO NAME"
+            "de": "Grabender Dhole"
 		},
 		"type": {
 			"en": ["Aberration"],
 			"it": ["Aberrazione"],
 			"es": ["Aberración"],
 			"fr": ["Aberration"],
-            "de": ["TODO TYPE"]
+            "de": ["Abnormität"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 1
@@ -1444,14 +1445,14 @@ let monsters = [
 			"it": "Sentinella del Crepuscolo",
 			"es": "Centinela del crepúsculo",
 			"fr": "Sentinelle du Crépuscule",
-            "de": "TODO NAME"
+            "de": "Wachposten der Loge"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
 			"it": ["Loggia", "Umano"],
 			"es": ["Logia", "Humano"],
 			"fr": ["Loge", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Loge", "Mensch"]
 		},
 		"expansion": "Secrets of the Order",
 		"quantity": 1
@@ -1462,14 +1463,14 @@ let monsters = [
 			"it": "Supplicante del Crepuscolo",
 			"es": "Suplicante del crepúsculo",
 			"fr": "Suppliant du Crépuscule",
-            "de": "TODO NAME"
+            "de": "Initiant der Silberloge"
 		},
 		"type": {
 			"en": ["Lodge", "Human"],
 			"it": ["Loggia", "Umano"],
 			"es": ["Logia", "Humano"],
 			"fr": ["Loge", "Humain"],
-            "de": ["TODO TYPE"]
+            "de": ["Loge", "Mensch"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -1480,14 +1481,14 @@ let monsters = [
 			"it": "Ammasso Ondeggiante",
 			"es": "Masa trémula",
 			"fr": "Masse Ondoyante",
-            "de": "TODO NAME"
+            "de": "Wogende Masse"
 		},
 		"type": {
 			"en": ["Formless Spawn"],
 			"it": ["Progenie Informe"],
 			"es": ["Semilla informe"],
 			"fr": ["Rejeton Informe"],
-            "de": ["TODO TYPE"]
+            "de": ["Formloses Gezücht"]
 		},
 		"expansion": "Dead of Night",
 		"quantity": 2
@@ -1498,14 +1499,14 @@ let monsters = [
 			"it": "Ingordo Feroce",
 			"es": "Glotón rabioso",
 			"fr": "Glouton Cruel",
-            "de": "TODO NAME"
+            "de": "Unersättlicher Beißer"
 		},
 		"type": {
 			"en": ["Ghoul"],
 			"it": ["Ghoul"],
 			"es": ["Gul"],
 			"fr": ["Goule"],
-            "de": ["TODO TYPE"]
+            "de": ["Ghul"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -1516,14 +1517,14 @@ let monsters = [
 			"it": "Toccato dal Vuoto",
 			"es": "Tocado por el vacío",
 			"fr": "Néant Incarné",
-            "de": "TODO NAME"
+            "de": "Kind der Leere"
 		},
 		"type": {
 			"en": ["Human", "Thrall"],
 			"it": ["Umano", "Servitore"],
 			"es": ["Humano", "Subyugado"],
 			"fr": ["Humain", "Thrall"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Marionette"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -1534,14 +1535,14 @@ let monsters = [
 			"it": "Titano della Scia",
 			"es": "Titán de la marea",
 			"fr": "Titan de la Houle",
-            "de": "TODO NAME"
+            "de": "Kielwassertitan"
 		},
 		"type": {
 			"en": ["Deep One"],
 			"it": ["Abitatore del Profondo"],
 			"es": ["Profundo"],
 			"fr": ["Profond"],
-            "de": ["TODO TYPE"]
+            "de": ["Tiefes Wesen"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
@@ -1552,14 +1553,14 @@ let monsters = [
 			"it": "Succiacapre",
 			"es": "Chotacabras",
 			"fr": "Engoulevent",
-            "de": "TODO NAME"
+            "de": "Ziegenmelker"
 		},
 		"type": {
 			"en": ["Beast"],
 			"it": ["Bestia"],
 			"es": ["Bestia"],
 			"fr": ["Bête"],
-            "de": ["TODO TYPE"]
+            "de": ["Bestie"]
 		},
 		"expansion": "Base Game",
 		"quantity": 2
@@ -1570,14 +1571,14 @@ let monsters = [
 			"it": "Drew \"Uomo-Lupo\"",
 			"es": "Drew \"el Hombre Lobo\"",
 			"fr": "Drew \"l'Homme Loup\"",
-            "de": "TODO NAME"
+            "de": "Drew der \"Wolfsmensch\""
 		},
 		"type": {
 			"en": ["Human", "Cultist"],
 			"it": ["Umano", "Cultista"],
 			"es": ["Humano", "Sectario"],
 			"fr": ["Humain", "Cultiste"],
-            "de": ["TODO TYPE"]
+            "de": ["Mensch", "Kultist"]
 		},
 		"expansion": "Base Game",
 		"quantity": 1
