@@ -33,10 +33,6 @@ function filePath(path) {
     return ( isAndroid() ? "/android_asset/www" : "" ) + path;
 }
 
-function setPseudoElContent(selector, value) {    
-    document.styleSheets[0].addRule(selector, 'content: "' + value + '";');
-}
-
 function makeTabs(tabs) {
     tabs.forEach(tab => {
         const [ button, content, callback ] = tab;
@@ -226,32 +222,32 @@ function selectorOverlay(selectorElement, show) {
     const parentTab = $(selectorElement).closest('.js-tab-content').get(0);
     let overlayElement = parentTab.querySelector('.browser-selector-overlay');
 
-    if (!overlayElement) {
-
+    if (show && !overlayElement) {
         overlayElement = document.createElement('div');
         overlayElement.classList.add('browser-selector-overlay');
-        overlayElement.style.display = 'none';
-        // parentTab.insertBefore(overlayElement, parentTab.children[0]);
         parentTab.appendChild(overlayElement);
-
-        overlayElement.addEventListener('click', ($ev) => {
-            selectorElement.dispatchEvent(new Event('change'));
-        });
-
+        overlayElement.addEventListener('click', selectorOverlayClick.bind(null, selectorElement));
+    } else if (!show && overlayElement) {
+        overlayElement.removeEventListener('click', selectorOverlayClick);
+        overlayElement.parentNode.removeChild(overlayElement);
     }
 
     let tabBar = document.getElementById('tab-bar');
     
     if (show) {
-        overlayElement.style.display = 'block';
         tabBar.style.pointerEvents = 'none';
         tabBar.style.opacity = 0.7;
     } else {
-        overlayElement.style.display = 'none' ;
         tabBar.style.pointerEvents = 'auto';
         tabBar.style.opacity = 1;
     }
 
+}
+
+function selectorOverlayClick(selectorElement) {
+    const parentTab = $(selectorElement).closest('.js-tab-content').get(0);
+    const overlayElement = parentTab.querySelector('.browser-selector-overlay');
+    selectorElement.dispatchEvent(new Event('change'));
 }
 
 function l(str) {

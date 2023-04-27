@@ -56,7 +56,7 @@ var options = {
             onChange: 'options.onLangChange',
         });
 
-        if (this.isOCRavailable) {
+        if (app.isOCRavailable) {
 
             // sound
             const soundElement = this.soundElement = document.getElementById('options-sound-switch');
@@ -162,10 +162,12 @@ var options = {
     applyOcrOption: function() {
         const row = document.getElementById('options-count');
         let originalDisplay = row.getAttribute('data-original-display');
+        console.log('was-original',originalDisplay);
         if (!originalDisplay) {
             originalDisplay = getComputedStyle(row).display;
             row.setAttribute('data-original-display', originalDisplay);
         }
+        console.log(this.readOption('ocr'), originalDisplay , 'none'  )
         row.style.display = this.readOption('ocr') ? originalDisplay : 'none' ;
     },
 

@@ -22,7 +22,7 @@ The list can be viewed as a simple list of all monsters, or grouped as in the sc
 Highlight monsters present only in the selected scenario. Useful if you want to store aside specific monsters of every scenario, so when you setup you'll have to search only the remaining ones.
 
 * MULTILANGUAGE\
-Italiano, English, Español, Français.
+Italiano, English, Español, Deutsch, Français.
 
 * WEB VERSION\
 https://mephitrpg.github.io/arkham-iii-monsters
