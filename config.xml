@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="110" id="it.mephit.ah3m" version="1.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="120" id="it.mephit.ah3m" version="1.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Arkham III Monsters</name>
     <description>
         Monster Deck setup helper for Arkham Horror Third Edition
     </description>
-    <author email="jure@mephit.it" href="http://mephit.it">
+    <author email="www.mephit.it@gmail.com" href="http://mephit.it">
         Jure di Mephit
     </author>
     <content src="index.html" />
