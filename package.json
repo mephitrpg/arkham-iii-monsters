@@ -8,7 +8,7 @@
     "android": "node_modules\\.bin\\cordova run android --device",
     "ios": "node_modules\\.bin\\cordova run ios --device",
     "browser": "node_modules\\.bin\\cordova run browser",
-    "browser-watch": "sync-files --watch www platforms\\browser\\www",
+    "browser-watch": "node_modules\\.bin\\syncdir www platforms\\browser\\www --watch",
     "connect": "adb tcpip 5555 && adb connect 192.168.1.123",
     "dist": "node_modules\\.bin\\cordova build android --release --buildConfig certificates/build.json",
     "prepare": "node_modules\\.bin\\cordova prepare",
@@ -28,7 +28,8 @@
     "cordova-plugin-media": "^5.0.3",
     "cordova-plugin-mobile-ocr": "^3.1.2",
     "cordova-plugin-splashscreen": "^6.0.0",
-    "es6-promise-plugin": "^4.2.2"
+    "es6-promise-plugin": "^4.2.2",
+    "sync-directory": "^6.0.4"
   },
   "cordova": {
     "plugins": {
@@ -48,6 +49,6 @@
     "cordova-android": "^12.0.0",
     "cordova-browser": "^7.0.0",
     "cordova-plugin-splashscreen": "^6.0.0",
-    "sync-files": "^1.0.3"
+    "sync-directory": "^4.0.12"
   }
 }
