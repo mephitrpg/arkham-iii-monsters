@@ -23,20 +23,18 @@ module.exports = {
     id: 'browser',
     cordovaVersion: '4.2.0', // cordova-js
 
-    bootstrap: function() {
-
-        var modulemapper = require('cordova/modulemapper');
-        var channel = require('cordova/channel');
+    bootstrap: function () {
+        const modulemapper = require('cordova/modulemapper');
+        const channel = require('cordova/channel');
 
         modulemapper.clobbers('cordova/exec/proxy', 'cordova.commandProxy');
 
         channel.onNativeReady.fire();
 
-        document.addEventListener("visibilitychange", function(){
-            if(document.hidden) {
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
                 channel.onPause.fire();
-            }
-            else {
+            } else {
                 channel.onResume.fire();
             }
         });
