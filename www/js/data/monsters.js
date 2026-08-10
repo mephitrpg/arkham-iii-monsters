@@ -275,7 +275,7 @@ let monsters = [
 			"it": "Segugio Braccante",
 			"es": "Perro perseguidor",
 			"fr": "Chien Pourchasseur",
-            "de": "Gefräßiger Hetzhund"
+            "de": "Geifernder Hetzhund"
 		},
 		"type": {
 			"en": ["Hound of Tindalos"],
@@ -779,7 +779,7 @@ let monsters = [
 			"it": "Segugio Lamentoso",
 			"es": "Horror aullante",
 			"fr": "Chien Tenace",
-            "de": "Geifernder Hetzhund"
+            "de": "Kreischender Hund"
 		},
 		"type": {
 			"en": ["Hound of Tindalos"],
@@ -1121,7 +1121,7 @@ let monsters = [
 			"it": "Predatore Famelico",
 			"es": "Depredador hambriento",
 			"fr": "Prédateur Vorace",
-            "de": "Kreischender Hund"
+            "de": "Gefräßiger Hetzhund"
 		},
 		"type": {
 			"en": ["Hound of Tindalos"],
