@@ -29,7 +29,8 @@
         <allow-intent href="market:*" />
         <preference name="Orientation" value="portrait" />
         <preference name="android-minSdkVersion" value="28" />
-        <preference name="android-targetSdkVersion" value="34" />
+        <preference name="android-targetSdkVersion" value="36" />
+        <preference name="GradleVersion" value="8.11.1" />
         <icon density="ldpi" src="res/icons/36x36.png" />
         <icon density="mdpi" src="res/icons/48x48.png" />
         <icon density="hdpi" src="res/icons/72x72.png" />
