@@ -156,6 +156,7 @@ class Scenario {
         this.data.monsterGropus.forEach(group => {
             // console.log("group",group.name.it);
             const groupMonsters = group.monsters;
+            const listTagName = options.readOption('numbered') ? 'ol' : 'ul';
             html += '<ul class="scenario-group">';
                 html += '<li>';
                     html += '<div class="scenario-group-name">';
@@ -166,7 +167,7 @@ class Scenario {
                             html += '<div class="scenario-group-column-title">';
                                 html += l('SPECIFIC_MONSTERS');
                             html += '</div>';
-                            html += '<ul class="scenario-group-monsters-list">';
+                            html += '<' + listTagName + ' class="scenario-group-monsters-list">';
                             groupMonsters.sort((a, b) => {
                                 if (!a.id || !b.id) return 0;
                                 const ma = this.getMonsterById(a.id, cloneMonsters);
@@ -205,7 +206,7 @@ class Scenario {
                             if (!q) {
                                 html += `<li class="scenario-monsters-li noitems"><div class="content">${l('NO_MONSTERS')}</div></li>`;
                             }
-                            html += '</ul>';
+                            html += '</' + listTagName + '>';
                         html += '</li>';
                         
                         if (!groupMonsters.find(item => item.type)) return;
@@ -226,7 +227,7 @@ class Scenario {
                             html += '<div class="scenario-group-column-title">';
                                 html += l('ALL_TYPE_MONSTERS', monsterTypeDisplay)
                             html += '</div>';
-                            html += '<ul class="scenario-group-monsters-list">';
+                            html += '<' + listTagName + ' class="scenario-group-monsters-list">';
                             typeMonsters.sort((ma, mb) => {
                                 return ma.getName().localeCompare(mb.getName(), lang);
                             });
@@ -253,13 +254,13 @@ class Scenario {
                             if (!q) {
                                 html += `<li class="scenario-monsters-li noitems"><div class="content">${l('NO_MONSTERS')}</div></li>`;
                             }
-                            html += '</ul>';
+                            html += '</' + listTagName + '>';
                         });
                         html += '</li>';
                         
                     html += '</ul>';
                 html += '</li>';
-            html += '</ul>';
+            html += '</ol>';
         });
         return html;
     }
@@ -268,8 +269,9 @@ class Scenario {
         if (options.readOption('highlightUnique')) uniqueMonsters = this.getUniqueMonsters();
         const ocrOption = options.readOption('ocr');
         const countOption = options.readOption('count');
+        const listTagName = options.readOption('numbered') ? 'ol' : 'ul';
         let html = '';
-        html += '<ul class="scenario-flat">';
+        html += '<' + listTagName + ' class="scenario-flat">';
         this.getMonsters().forEach(item => {
             const name = item.name;
             const slug = item.slug;
@@ -294,7 +296,7 @@ class Scenario {
                 </div>
             </li>`;
         });
-        html += '</ul>';
+        html += '</' + listTagName + '>';
         return html;
     }
     count (monster, ancestorElement) {

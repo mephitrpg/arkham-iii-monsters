@@ -32,7 +32,7 @@ let scenarios = [
           it: "Adoratori di Umôrdhoth",
           es: "Adoradores de Umôrdhoth",
           fr: "Les Adorateurs d'Umôrdhoth",
-          de: "",
+          de: "Jünger von Umôrdhoth",
         },
         monsters: [
           { id: "Alma Hill", quantity: 1 },

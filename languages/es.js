@@ -18,6 +18,8 @@ languages["es"] = {
         "OPTION_HIGHLIGHT_UNIQUE_DESCRIPTION" : "Resaltar los monstruos exclusivos del escenario seleccionado",
         "OPTION_GROUP_TITLE" : "Lista compacta",
         "OPTION_GROUP_DESCRIPTION" : "",
+        "OPTION_NUMBERED_TITLE" : "Lista numerada",
+        "OPTION_NUMBERED_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_TITLE" : "Expansiones",
         "OPTION_EXPANSIONS_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_BASE_TITLE" : "",

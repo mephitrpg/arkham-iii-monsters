@@ -18,6 +18,8 @@ languages["fr"] = {
         "OPTION_HIGHLIGHT_UNIQUE_DESCRIPTION" : "Surligner les monstres présents uniquement dans le scénario sélectionné",
         "OPTION_GROUP_TITLE" : "Liste Compacte",
         "OPTION_GROUP_DESCRIPTION" : "",
+        "OPTION_NUMBERED_TITLE" : "Liste Numérotée",
+        "OPTION_NUMBERED_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_TITLE" : "Extensions",
         "OPTION_EXPANSIONS_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_BASE_TITLE" : "",
