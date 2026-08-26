@@ -18,6 +18,8 @@ languages["it"] = {
         "OPTION_HIGHLIGHT_UNIQUE_DESCRIPTION" : "Evidenzia i mostri presenti soltanto nello scenario selezionato",
         "OPTION_GROUP_TITLE" : "Lista compatta",
         "OPTION_GROUP_DESCRIPTION" : "",
+        "OPTION_NUMBERED_TITLE" : "Lista numerata",
+        "OPTION_NUMBERED_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_TITLE" : "Espansioni",
         "OPTION_EXPANSIONS_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_BASE_TITLE" : "",

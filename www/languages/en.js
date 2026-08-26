@@ -18,6 +18,8 @@ languages["en"] = {
         "OPTION_HIGHLIGHT_UNIQUE_DESCRIPTION" : "Highlight monsters present only in the selected scenario",
         "OPTION_GROUP_TITLE" : "Compact list",
         "OPTION_GROUP_DESCRIPTION" : "",
+        "OPTION_NUMBERED_TITLE" : "Numbered list",
+        "OPTION_NUMBERED_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_TITLE" : "Expansions",
         "OPTION_EXPANSIONS_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_BASE_TITLE" : "",

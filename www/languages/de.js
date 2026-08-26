@@ -18,6 +18,8 @@ languages["de"] = {
         "OPTION_HIGHLIGHT_UNIQUE_DESCRIPTION" : "Markiere Monster, welche nur im ausgewählten Szenario vorhanden sind",
         "OPTION_GROUP_TITLE" : "Kompakte Liste",
         "OPTION_GROUP_DESCRIPTION" : "",
+        "OPTION_NUMBERED_TITLE" : "Nummerierte Liste",
+        "OPTION_NUMBERED_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_TITLE" : "Erweiterungen",
         "OPTION_EXPANSIONS_DESCRIPTION" : "",
         "OPTION_EXPANSIONS_BASE_TITLE" : "",

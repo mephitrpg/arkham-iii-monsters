@@ -93,6 +93,11 @@ var options = {
         groupElement.checked = this.readOption('group');
         groupElement.addEventListener('change', this.onGroupChange.bind(this));
 
+        // numbered
+        const numberedElement = this.numberedElement = document.getElementById('options-numbered-switch');
+        numberedElement.checked = this.readOption('numbered');
+        numberedElement.addEventListener('change', this.onNumberedChange.bind(this));
+
          // expansions
          expansions.forEach(exp=>{
             const code = exp.getCode();
@@ -194,6 +199,15 @@ var options = {
             this.saveOption('group', true);
         } else {
             this.saveOption('group', false);
+        }
+        app.renderScenario();
+    },
+
+    onNumberedChange: function(event) {
+        if (event.target.checked) {
+            this.saveOption('numbered', true);
+        } else {
+            this.saveOption('numbered', false);
         }
         app.renderScenario();
     },
