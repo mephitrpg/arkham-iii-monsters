@@ -18,6 +18,9 @@ Unlike what happens in the scenario sheet, "All [monster type] monsters" names a
 * COMPACT LIST\
 The list can be viewed as a simple list of all monsters, or grouped as in the scenario sheet.
 
+* NUMBERED LIST\
+Useful if you don’t want to prepare the monster deck and keep them in an alphabetical notebook instead: rather than drawing a card, roll a die and take the corresponding monster.
+
 * EXCLUSIVE MONSTERS\
 Highlight monsters present only in the selected scenario. Useful if you want to store aside specific monsters of every scenario, so when you setup you'll have to search only the remaining ones.
 
